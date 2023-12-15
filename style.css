@@ -8,7 +8,51 @@ body{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 overflow-x: hidden;
 background-color: #033d8b;
+
 }
+.loader {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    display: flex;
+    top: 45vh;
+    left: 50%;
+  }
+  .loader:before{
+      content: "";
+      border-left: 24px solid #fff;
+      border-right: 24px solid #fff;
+      position: absolute;
+      height: 24px;
+      width: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0px;
+      animation: splitX 1s  linear infinite alternate;
+  }
+  .loader:after{
+    content: '';
+    width: 48px;
+    height: 24px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    animation:moveY 1s linear infinite alternate;
+  }
+  @keyframes splitX {
+    0% {width: 0; transform: translate(-50% , 0)}
+    33% {width: 100%; transform: translate(-50% , 0)}
+    66% {width: 100%; transform: translate(-50% , 24px)}
+    100% {width: 0; transform: translate(-50% , 24px)}
+  }
+
+  @keyframes moveY {
+    0% , 33% {transform: translateY(0)}
+    66% , 100% {transform: translateY(-24px)}
+  }
+
 
 :root{
     --color-canvas-default-transparent: rgba(255,255,255,0);
@@ -653,6 +697,34 @@ margin-top: 0.5rem;
     border: 1px solid var(--color-border-default);
 }
 
+.copyright-2{
+    margin-top: 1rem;
+    max-width: 95%;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+}
+.copyright-2 p{
+    font-size: 0.75rem;
+    color: var(--color-fg-muted);
+}
+.copyright-2 ul{
+display: flex;
+text-align: center;
+justify-content: space-between;
+padding-top: 0.7rem;
+}
+.copyright-2 li{
+list-style: none;
+}
+.copyright-2 li a{
+font-size: 0.75rem;
+text-decoration: none;
+color: var(--color-accent-fg);
+}
+.copyright-2 li a:hover{
+    text-decoration:underline;
+    
+}
 /* header- div - 2 -search ********************/
 .header-search{
     display: flex;
@@ -660,6 +732,7 @@ margin-top: 0.5rem;
     align-items: center;
     color: var(--color-fg-subtle);
     gap: 8px;
+    margin-right: 1rem;
 }
 .octicon{
 
