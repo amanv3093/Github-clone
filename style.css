@@ -676,8 +676,8 @@ margin-top: 0.5rem;
     font-weight: 800;
 }
 .search{
-    padding: 5px 5px;
-    border-radius: 4px;
+    padding: 7px 7px;
+    border-radius: 6px;
     display: flex;
     color: var(--color-scale-gray-1);
 }
@@ -685,6 +685,62 @@ margin-top: 0.5rem;
     background-color: var(--color-btn-hover-bg);
     cursor: pointer;
     color:var(--color-scale-gray-9) ;
+}
+#srch-3-hidden2{
+    display: none;
+    margin-bottom: 0.8rem;
+}
+.repo-search-hidden{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.inner-srch-2{
+display: flex;
+justify-content: space-around;
+align-items: center;
+border: 1px solid var(--color-border-default);
+border-radius: 6px;
+padding: 7px 7px;
+}
+.inner-srch-2 .srch-3{
+    
+    display: flex;
+}
+.inner-srch-2 input{
+    border: none;
+    padding: 0px 4px;
+}
+.inner-srch-2 .search-3{
+    border-radius: 6px;
+    display: flex;
+    color: var(--color-scale-gray-1);
+}
+.inner-srch-2 .search-3:hover{
+    background-color: var(--color-btn-hover-bg);
+    cursor: pointer;
+    color:var(--color-scale-gray-9) ;
+}
+.upper-srch-2{
+    padding: 7px 7px;
+    border-radius: 6px;
+    display: flex;
+    color: var(--color-scale-gray-1);
+
+}
+.upper-srch-2:hover{
+    background-color: var(--color-btn-hover-bg);
+    cursor: pointer;
+    color:var(--color-scale-gray-9) ;
+
+}
+.upper-srch-2 a{
+
+}
+
+.form{
+    border: 1px solid red;
 }
 .profile-2{
     background-image: url("/115875004.png");
@@ -724,6 +780,108 @@ color: var(--color-accent-fg);
     text-decoration:underline;
     
 }
+/* Repo search */
+
+
+/*******************/
+.menu-list-2{
+    width: 23vw;
+    border-top-left-radius: 15px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    right:0;
+    top: 0;
+    border: 1px solid var(--color-border-default);
+    
+}
+.menu-all-2{
+   height: 100%;
+}
+.menu-list-s2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    height: 10%;
+}
+.cancel-2{
+    padding: 5px 5px;
+    border-radius: 4px;
+    display: flex;
+    color: var(--color-scale-gray-1);
+
+}
+.cancel-2:hover{
+    background-color: var(--color-btn-hover-bg);
+    cursor: pointer;
+    color:var(--color-scale-gray-9) ;
+}
+.material-symbols-outlined:hover{
+    cursor: pointer;
+}
+
+
+.logo-22 img{
+    height:var(--base-size-32) ;
+    width:var(--base-size-32)  ;
+    border-radius: 50%;
+}
+.logo-22 a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.logo-22 span{
+padding-left: 8px;
+font-size: 14px;
+color: var(--color-fg-default);
+font-weight: 800;
+}
+.menu-icon-section2-head{
+    overflow-y: scroll;
+    height: 90%;
+    padding: 0.5rem;
+
+}
+.menu-icon-2{
+    border-bottom: 1px solid var(--color-border-default);
+    max-width: 95%;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+
+}
+.common-icon-3{
+    padding: 10px;
+    max-width: 95%;
+}
+.common-icon-3:hover{
+background-color: var(--color-btn-hover-bg);
+border-radius: 5px;
+}
+.common-icon-3 .anchor-3 {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.common-icon-3 .anchor-3 span{
+   color: var(--color-fg-default);
+   font-size: 0.875rem;
+   padding-left: 8px;
+
+}
+.sign-out-logo{
+    border: none;
+}
+#openmenu2{
+    display: none;
+}
+
+
+
+
+/* *************************** */
+
 /* header- div - 2 -search ********************/
 .header-search{
     display: flex;
@@ -752,6 +910,9 @@ color: var(--color-accent-fg);
     
 
     
+}
+svg{
+    fill: rgb(101, 109, 118);
 }
 .oc-1{
     cursor: pointer;
@@ -849,6 +1010,7 @@ border-radius: 5px;
     background-size: cover;
     border-radius: 50%;
     border: 1px solid var(--color-border-default);
+    cursor: pointer;
 }
 .profile-logo{
    
