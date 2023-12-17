@@ -712,7 +712,11 @@ padding: 7px 7px;
 .inner-srch-2 input{
     border: none;
     padding: 0px 4px;
+    outline: none;
 }
+/* .inner-srch-2:hover {
+    border:2px solid #0969da !important;
+} */
 .inner-srch-2 .search-3{
     border-radius: 6px;
     display: flex;
