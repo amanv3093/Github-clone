@@ -36,6 +36,29 @@ function addfile() {
  
 }
 
+
+let setstatus1=document.querySelector("#set-status-hidden");
+
+ function setstatus(){
+  console.log("set satus")
+  if(setstatus1.style.display==="block"){
+    setstatus1.style.display="none";
+    console.log("set satus")
+  
+
+  }else{
+    setstatus1.style.display="block";
+    console.log("set satus")
+    
+    
+  }
+ }
+ let cross8999=document.querySelector("#cross-8999-head");
+function cross899(){
+ setstatus1.style.display="none";
+  
+ }
+
 let commandpalet1=document.querySelector("#command-plalette-003");
 
  function commandpalet(){
@@ -79,15 +102,11 @@ let commandpalet1=document.querySelector("#command-plalette-003");
 
   closefile2.addEventListener("click",(e)=>{
     console.log("run")
-    // addfilehidden.style.display = "none";
-    // search00122.style.display = "none";
-    // document.body.style.backgroundColor="transparent"
+ 
     if(!(e.target.classList.contains("create-file0032"))){
       console.log("not")
 addfilehidden.style.display="none";
-// commandpalet1.style.display="none";
-// search00122.style.display="none";
-// document.body.style.backgroundColor="transparent"
+
 
     }
   })

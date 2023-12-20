@@ -1184,6 +1184,7 @@ gap: 8px;
     position: absolute;
     left:30%;
    top: 20vh;
+   display: none;
    border-radius: 12px;
    box-shadow:  var(--shadow-floating-small, var(--color-overlay-shadow));
 }
