@@ -9,7 +9,7 @@ width: 100%;
 }
 
 main{
-width: 320px;
+width: 300px;
 margin: 2% auto;
 
 }
@@ -50,6 +50,7 @@ background-color: rgb(246, 248, 250);
     padding: 7px;
     border-radius: 6px;
     outline: none;
+    height: 31px;
     
 }
 .header-input .username input:focus{
@@ -78,6 +79,7 @@ margin-top: 1rem;
     padding: 7px;
     border-radius: 6px;
     outline: none;
+    height: 31px;
 }
 .password input:focus{
     border: 2px solid rgb(9, 105, 218);
