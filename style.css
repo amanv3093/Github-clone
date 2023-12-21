@@ -916,7 +916,7 @@ border-radius: 5px;
     margin-left: -16px;
     display: flex;
     top:calc(69px - 20px );
-    display: none;
+    /* display: none; */
     
    
 
@@ -928,33 +928,73 @@ display: block;
 .issues-tookit-fl{
     display: flex;
     gap: 3px;
-  
+    display: none;
 
 }
 .commandpalet-toolkit{
-   
+    display: none;
     width: 129px;
 }
+.command-toolkit-icon{
+    position: absolute;
+    top: -10px;
+    color: var(--color-fg-default);
+    left: 57px;
+    font-size: 21px;
+}
+
 .create-toolkit{
-   
+   display: none;
     width: 99px;
+}
+.create-toolkit-icon{
+    position: absolute;
+    top: -10px;
+    color: var(--color-fg-default);
+    left: 44px;
+    font-size: 21px;
+    
 }
 #addfile-hidden:hover .tookit{
     display: none !important;
     background-color: #033d8b;
+    display: none;
 }
+
 .issue-toolkit{
-  
+    display: none;
+}
+.issues-toolkit-icon{
+    position: absolute;
+    top: -10px;
+    color: var(--color-fg-default);
+    left: 28px;
+    font-size: 21px;
 }
 .pull-toolkit{
-   
+    display: none;
     width: 104px;
     margin-left: -34px;
 }
+.pull-toolkit-icon{
+    position: absolute;
+    top: -10px;
+    color: var(--color-fg-default);
+    left: 45px;
+    font-size: 21px; 
+}
 .notification-toolkit{
-  
+    display: none;
     margin-left: -171px;
     width: 208px;
+}
+.notification-toolkit-icon{
+    position: absolute;
+    top: -10px;
+    color: var(--color-fg-default);
+    
+    font-size: 21px; 
+    right: 13px;  
 }
 .search-bar{
     display: flex;
