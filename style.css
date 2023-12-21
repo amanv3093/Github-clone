@@ -902,12 +902,60 @@ border-radius: 5px;
 
 } */
 .header-srch-border{
-   
-   
+   position: relative;
+}
 
+.tookit{
+    position: absolute;
+    background-color: var(--color-fg-default);
+    color: white;
+    /* margin-top: 5px; */
+    padding: 8px 17px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-left: -16px;
+    display: flex;
+    top:calc(69px - 20px );
+    display: none;
+    
+   
 
 }
 
+.toolkit-hov:hover .tookit{
+display: block;
+}
+.issues-tookit-fl{
+    display: flex;
+    gap: 3px;
+  
+
+}
+.commandpalet-toolkit{
+   
+    width: 129px;
+}
+.create-toolkit{
+   
+    width: 99px;
+}
+#addfile-hidden:hover .tookit{
+    display: none !important;
+    background-color: #033d8b;
+}
+.issue-toolkit{
+  
+}
+.pull-toolkit{
+   
+    width: 104px;
+    margin-left: -34px;
+}
+.notification-toolkit{
+  
+    margin-left: -171px;
+    width: 208px;
+}
 .search-bar{
     display: flex;
     /* align-items: center; */
@@ -1474,6 +1522,7 @@ margin-bottom: 6px;
 cursor: pointer;
 
 }
+
 .plus{
     display: flex;
     align-items: center;

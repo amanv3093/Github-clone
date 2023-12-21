@@ -770,6 +770,8 @@
 
           <!-- Start -->
         <div class="header-search ">
+
+
           <div class="search-bar header-srch-border create-file0032">
             <label for="" class="search-label create-file0032" onclick="searchlabel()">
               <svg
@@ -790,7 +792,7 @@
               >
             </label>
 
-            <button class="srch-btn-1 create-file0032 create-file0032" onclick="commandpalet()">
+            <button class="srch-btn-1 create-file0032 create-file0032 toolkit-hov" onclick="commandpalet()">
               <span class="slash-1 create-file0032"></span>
               <svg
                 aria-hidden="true"
@@ -809,6 +811,9 @@
                   d="m6.354 8.04-4.773 4.773a.75.75 0 1 0 1.061 1.06L7.945 8.57a.75.75 0 0 0 0-1.06L2.642 2.206a.75.75 0 0 0-1.06 1.061L6.353 8.04ZM8.75 11.5a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5h-5.5Z"
                 ></path>
               </svg>
+              <div class="tookit commandpalet-toolkit">
+               Command palette
+            </div>
             </button>
 
             
@@ -819,7 +824,8 @@
         
           <div class="searchbar-line header-srch-border"></div>
 
-          <div class="create-file header-srch-border create-file0032" onclick="addfile()" id="create-file-2">
+          <!-- create-new -->
+          <div class="create-file header-srch-border create-file0032 toolkit-hov" onclick="addfile()" id="create-file-2">
             <div class="header-button-common create-file-btn create-file0032">
               <div class="plus create-file0032">
                 <span class="create-file-span-1 create-file0032">
@@ -910,11 +916,14 @@
               </ul>
 
             </div>
+            <div class="tookit create-toolkit">
+              create new..
+          </div>
           </div>
 
         
          <!-- issus -->
-         <a href="./Issues page/index.html">
+         <a class="toolkit-hov" href="./Issues page/index.html">
           <div class="search-issues header-srch-border">
            
             <div class="header-button-common">
@@ -934,14 +943,15 @@
                 </svg>
               <!-- </a> -->
             </div>
-          
-         
-
+            <div class="tookit issue-toolkit">
+            Issues</div>
           </div>
+          
         </a>
+        
 
            <!-- pull-request -->
-           <a href="./Issues page/index.html">
+           <a class="toolkit-hov" href="./Issues page/index.html">
          <div class="pull-request header-srch-border">
             <div class="header-button-common">
               <!-- <a href="" class="plus"> -->
@@ -960,11 +970,13 @@
                 </svg>
               <!-- </a> -->
             </div>
+            <div class="tookit pull-toolkit">Pull requests</div>
+          
           </div>
         </a>
 
           <!-- notification -->
-          <a href="./Issues page/index.html">
+          <a class="toolkit-hov" href="./Issues page/index.html">
           <div class="notification header-srch-border">
             <div class="header-button-common">
               <!-- <a href="" class="plus"> -->
@@ -983,7 +995,11 @@
                 </svg>
               <!-- </a> -->
             </div>
+            <div class="tookit notification-toolkit">
+              You have no unread notifications</div>
+           
           </div>
+          
         </a>
 
           <!-- profile -->
