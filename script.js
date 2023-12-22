@@ -90,7 +90,23 @@ let commandpalet1=document.querySelector("#command-plalette-003");
     }
    
   }
-  
+
+let filterdisplay=document.querySelector("#filter-hidden-1");
+  function filteropen(){
+    if(filterdisplay.style.display === "block"){
+      filterdisplay.style.display="none"
+    }else{
+      filterdisplay.style.display="block"
+  }
+
+  }
+  function filterclose(){
+    if(filterdisplay.style.display === "block"){
+      filterdisplay.style.display="none"
+    }else{
+      filterdisplay.style.display="block"
+  }
+  }
   closefile.addEventListener("click",()=>{
     addfilehidden.style.display = "none";
     search00122.style.display = "none";

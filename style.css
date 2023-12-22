@@ -1274,6 +1274,7 @@ gap: 8px;
     position: absolute;
     left:30%;
    top: 20vh;
+   z-index: 15;
    display: none;
    border-radius: 12px;
    box-shadow:  var(--shadow-floating-small, var(--color-overlay-shadow));
@@ -1606,8 +1607,18 @@ cursor: pointer;
  }
  /* end */
 
+
+
+
+
+
+
+
+
  /* section-1 */
- /* #section-1{
+ #section-1{
+display: flex;
+ }
 
 /* position: relative; */
   
@@ -1729,3 +1740,203 @@ padding: 15px;
 font-size: 12px;
 color: var(--color-fg-muted);
   }
+/* section-box-2 */
+.section-box-2{
+    width: 76vw;
+    display: flex;
+    padding-inline: 26px;
+    gap: 25px;
+    padding-top: 24px;
+   
+
+}
+
+/* left */
+.section-box-2-left{
+    width: 660px;
+    height: 60vh;
+    /* border: 1px solid gray; */
+}
+.section-box-2-left{
+
+}
+.section-left-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-left-heading>h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-fg-default);
+}
+.section-left-filter{
+display: flex;
+align-items: center;
+position: relative;
+}
+.section-left-filter>a{
+    font-size: 14px;
+    color: #0969da;
+    padding-right: 2rem;
+    text-decoration: none;
+}
+.section-left-filter>a:hover{
+    text-decoration: underline;
+}
+.section-left-filter .section-left-filter-box{
+border: 1px solid var(--color-border-default);
+border-radius: 6px;
+display: flex;
+align-items: center;
+padding: 6px 14px;
+    gap: 8px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.section-left-filter .section-left-filter-box h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-fg-default);
+}
+.section-left-filter .section-left-filter-box>p{
+    font-size: 12px;
+    background-color: var(--color-border-default);
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* start -hidden */
+.filter-hidden{
+    width: 362px;
+    height: auto;
+   box-shadow: var(--color-shadow-large);
+    position: absolute;
+    right: 0;
+    top: 45px;
+    display: none;
+   
+    border-radius: 6px;
+    border: 1px solid var(--color-border-default);
+
+}
+.filter-hidden-head{
+padding: 7px 7px 7px 16px;
+border-bottom: 1px solid var(--color-border-default);
+}
+.filter-hidden-head .filter-hidden-head-box-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.filter-hidden-head .filter-hidden-head-box-1>h2{
+    font-size: 12px;
+    color: var(--color-fg-default);
+}
+.filter-cross-icon{
+    fill: var(--color-fg-muted);
+}
+.filter-cross-icon:hover{
+    fill:var(--color-fg-default);
+    cursor: pointer;
+}
+/* sect-2  hidden*/
+.filter-section-2-head{
+overflow-y: scroll;
+height: 51vh;
+}
+.filter-section-2{
+    padding: 7px 7px 7px 16px;
+}
+.filter-section-2-top22{
+    line-height: 22px;
+}
+.filter-section-2-top22>h2{
+    font-size: 14px;
+    color: var(--color-fg-default);
+}
+.filter-section-2-top22>p{
+    font-size: 12px;
+    color:var(--color-fg-muted);
+}
+
+.filter-section-list{
+    padding: 7px 7px 7px 16px;
+    
+}
+.filter-section-list .filter-section-chekbox{
+    margin-bottom: 1rem;
+    padding: 5px 0px;
+}
+.filter-section-list .filter-section-chekbox:hover{
+    background-color: var(--color-btn-hover-bg);
+}
+.filter-input0009{
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.filter-input0009>h3{
+   font-size: 14px;
+   
+}
+.filter-section-chekbox .filter-heading0899{
+    font-size: 12px;
+    padding-left: 21px;
+    padding-top: 10px;
+    color: var(--color-fg-muted);
+}
+
+.filter-chekboxtopborder{
+    border-top: 1px solid var(--color-border-default);
+}
+.filter-chekboxtopborder-top{
+    margin-top: 1.4rem;
+}
+.filter-hidden-button{
+border: 1px solid var(--color-border-default);
+
+}
+.filter-hidden-button .filter-save-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 12px;
+    gap: 8px;
+    
+}
+.filter-hidden-button .filter-save-btn>p{
+    font-size: 14px;
+    color: #0969da;
+    
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+.filter-hidden-button .filter-save-btn>p:hover{
+    background-color: var(--color-btn-hover-bg);
+    cursor: pointer;
+    
+}
+.filter-hidden-button .filter-save-btn button{
+    background-color: #1f883d;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font: 14px;
+    cursor: pointer;
+}
+/* end */
+
+.section-box-2-right{
+    width: 325px;
+    height: 60vh;
+    background-color: #0550ae;
+    
+}
+
+
+
+
