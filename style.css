@@ -955,10 +955,10 @@ display: block;
     font-size: 21px;
     
 }
-#addfile-hidden:hover .tookit{
+#addfile-hidden:hover .create-toolkit{
     display: none !important;
     background-color: #033d8b;
-    display: none;
+    
 }
 
 .issue-toolkit{
@@ -1509,7 +1509,8 @@ position: absolute;
 padding: 10px;
 margin-top: 0.5rem;
 border-radius: 8px;
-left: -234%;
+left: 72%;
+top: 69%;
 box-shadow: var(--color-overlay-shadow);
 }
 /* .header-srch-border-hidden ul{
