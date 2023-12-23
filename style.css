@@ -1818,7 +1818,8 @@ padding: 6px 14px;
     right: 0;
     top: 45px;
     display: none;
-   
+   background-color: #fff;
+   z-index: 20;
     border-radius: 6px;
     border: 1px solid var(--color-border-default);
 
@@ -1929,6 +1930,198 @@ border: 1px solid var(--color-border-default);
     font: 14px;
     cursor: pointer;
 }
+
+.code-section{
+    margin-top: 1rem;
+}
+.code-section-head{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.code-section-head .icon78{
+    display: flex;
+    align-items: center;
+    gap: 8px
+    
+}
+.code-section-head .icon78>h6{
+    background-color: var(--color-border-default);
+    padding: 6px 7px;
+    border-radius: 50%;
+    
+}
+
+.code-section-head .icon78 p{
+    font-size: 14px;
+    color: var(--color-fg-muted);
+    
+}
+.code-section-head .icontext78{
+    
+}
+.code-box-009{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.box0091{
+    width: 314px;
+    height: 364px;
+    border: 1px solid var(--color-border-default);
+    border-radius: 3px;
+    padding: 16px;
+}
+.box0091>h1{
+    font-size: 14px;
+    color: var(--color-fg-default);
+}
+.box0091>p{
+    font-size: 14px;
+    color: var(--color-fg-muted);
+    margin-top: 1rem;
+    line-height: 20px;
+}
+.box0091 .box0091-input {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box0091 .box0091-input >p{
+    font-size: 14px;
+    color: var(--color-fg-default);
+ }
+
+
+.box0091 .box0091-input .box0091input00{
+    padding: 6px 15px;
+    font-size: 12px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid var(--color-border-default);
+    height: 28px;
+}
+.box0091input00:focus{
+    border: 2px solid blue !important;
+}
+
+.box0091-chekbox{
+margin-top: 1rem;
+}
+.box0091-input0009{
+display: flex;
+align-items: center;
+    gap: 8px;
+}
+.box0091-input0009>h3{
+    font-size: 12px;
+    font-size: 500;
+    color: var(--color-fg-default);
+}
+.box0091-heading0899{
+font-size: 12px;
+color: var(--color-fg-muted);
+padding-left: 53px;
+}
+.box0091-btn{
+    margin-top: 1rem;
+    background-color: #1f883d;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 7px 12px;
+}
+.box0091-btn:hover{
+    background-color: rgb(26, 127, 55);
+    cursor: pointer;
+}
+
+.box0092{
+    width: 314px;
+    height: 364px;
+    border: 1px solid var(--color-border-default);
+    border-radius: 3px;
+    padding: 16px;
+}
+.box0092>h1{
+    font-size: 14px;
+    color: var(--color-fg-default);
+}
+.box0092>p{
+    font-size: 14px;
+    color: var(--color-fg-muted);
+    margin-top: 1rem;
+    line-height: 20px;
+}
+.box0092-container{
+    margin-top: 1rem;
+    width: 280px;
+    height: auto;
+    border: 1px solid var(--color-border-default);
+    border-radius: 6px;
+    overflow: hidden;
+}
+.box0092-container .box0092-bx-1{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 8px 16px;
+
+}
+
+.box0092-container .box0092-bx-1>p{
+    color: var(--color-fg-default);
+    font-size: 12px;
+}
+.box0092-container .box0092-bx-1 p span{
+    
+}
+
+
+.box0092-container .box0092-bx-1 button{
+    padding: 7px 12px;
+    border: 6px;
+    border: none;
+    background-color: #1f883d;
+    border-radius: 6px;
+    color: #ffffff;
+}
+.box0092-container .box0092-bx-1 button:hover{
+    background-color: rgb(26, 127, 55);
+    cursor: pointer;
+}
+.box00924-bx-2{
+    border-top: 1px solid var(--color-border-default);
+    background-color: var(--color-canvas-subtle);
+    width: 100%;
+    height: auto;
+}
+.box00924-container{
+    padding: 6px 0px;
+
+}
+.box00924-container-box{
+display: flex;
+align-items: center;
+/* justify-content: space-between; */
+padding: 4px 16px;
+gap: 10px;
+}
+.box00924-container-box>span{
+    font-size: 12px;
+    color: var(--color-fg-muted);
+
+}
+.box00924-container-box p>span{
+    padding-right: 5px;
+}
+.box00924-container-box p{
+    font-size: 12px; 
+    padding-left: 10px;
+}
+
+
 /* end */
 
 .section-box-2-right{
