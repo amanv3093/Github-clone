@@ -29,7 +29,11 @@ body {
     margin-top: 2.5rem;
 }
 
-.abc {
+.upper hr {
+    opacity: 0.2;
+}
+
+.abc  {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,6 +45,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
+    border-left: 3px solid #0a58ca;
 }
 
 .one {
@@ -130,13 +135,11 @@ body {
     border-radius: 5px;
     padding: 3px 10px;
     background-color: #F6F8FA;
-}
-
-#docs a {
     color: black;
     font-size: 14px;
     font-weight: 500;
 }
+
 
 #new {
     border: 1px solid rgb(217, 217, 217);
@@ -144,13 +147,11 @@ body {
     border-radius: 5px;
     padding: 4px 8px;
     background-color: #1A7F37;
-}
-
-#new a {
     color: white;
     font-size: 14px;
     font-weight: 500;
 }
+
 
 .box {
     width: 100%;
@@ -387,8 +388,11 @@ hr {
     cursor: pointer;
 } 
 
+#event-12 {
+    display: none;
+}
+
 .clic-event {
-    display: none !important;
     position: absolute;
     width: 245px;
     height: 370px;

@@ -29,12 +29,16 @@ body {
     margin-top: 2.5rem;
 }
 
+.upper hr {
+    opacity: 0.2;
+}
+
 .abc {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3px;
-    background-color: #F0F2F4;
+    /* background-color: #F0F2F4; */
     padding: 6px 10px;
     margin-bottom: 0.5rem;
     border-radius: 5px;
@@ -77,6 +81,11 @@ body {
     font-size: 14px;
     /* font-weight: 500; */
     cursor: pointer;
+}
+
+.left-border {
+    border-left: 3px solid #0a58ca;
+    background-color: #F0F2F4;
 }
 .abc-2:hover {
     background-color: #F0F2F4;
@@ -277,9 +286,11 @@ hr {
     border-radius: 5px;
     cursor: pointer;
 } 
+#event-12 {
+    display: none;
+}
 
 .clic-event {
-    display: none !important;
     position: absolute;
     width: 245px;
     height: 370px;

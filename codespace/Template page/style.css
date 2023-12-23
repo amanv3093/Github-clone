@@ -30,13 +30,15 @@ body {
     margin-left: 1.5rem;
     margin-top: 4rem;
 }
+.upper hr {
+    opacity: 0.2;
+}
 
 .abc {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3px;
-    background-color: #F0F2F4;
     padding: 6px 10px;
     margin-bottom: 0.5rem;
     border-radius: 5px;
@@ -79,6 +81,11 @@ body {
     font-size: 14px;
     /* font-weight: 500; */
     cursor: pointer;
+}
+
+.left-blue {
+    border-left: 3px solid #0a58ca;
+    background-color: #F0F2F4;
 }
 .abc-2:hover {
     background-color: #F0F2F4;
