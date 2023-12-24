@@ -8,11 +8,13 @@
 
 body {
     overflow-x: hidden;
+    height: auto;
+    width: 100vw;
 }
 
 .container {
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    width: 100%;
     background-color: #FFFFFF;
     display: flex;
 }
@@ -40,7 +42,6 @@ body {
     padding: 3px;
     background-color: #F0F2F4;
     padding: 6px 10px;
-    margin-bottom: 0.5rem;
     border-radius: 5px;
     font-size: 14px;
     font-weight: 500;
@@ -83,6 +84,10 @@ body {
     /* font-weight: 500; */
     cursor: pointer;
 }
+
+.pad {
+    margin-top: 0.3rem;
+}
 .abc-2:hover {
     background-color: #F0F2F4;
 }
@@ -98,7 +103,8 @@ body {
 
 .abc-2 span a {
     text-decoration: none;
-    color: #616365;
+    color: black;
+    font-weight: 375;
 }
 
 .reposetery {
@@ -142,7 +148,7 @@ body {
 
 
 #new {
-    /* border: 1px solid rgb(217, 217, 217); */
+    border: 1px solid rgb(217, 217, 217);
     margin-left: 10px;
     border-radius: 5px;
     padding: 7px 12px;
@@ -155,7 +161,7 @@ body {
 
 .box {
     width: 100%;
-    height: 60%;
+    height: auto;
     border: 1.3px solid rgb(217, 217, 217);
     margin-top: 2rem;
     border-radius: 5px;
@@ -167,7 +173,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0px 23px;
+    padding: 0px 28px;
     align-items: center;
 }
 
@@ -190,17 +196,18 @@ body {
 .box-model {
     width: 100%;
     display: flex;
-    height: 100%;
+    height: auto;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: -3%;
+    margin-top: 1%;
 }
 
 .box-1 {
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
     border: 1px solid rgb(217, 217, 217);
-    width: 22%;
-    height: 75%;
+    width: 22.5%;
+    height: 16.9rem;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -273,9 +280,9 @@ body {
 }
 
 .space-disco {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     width: 100%;
-    height: 40%;
+    height: auto;
     border: 1px solid rgb(217, 217, 217);
     border-radius: 5px;
     
@@ -301,6 +308,7 @@ hr {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 1%;
 }
 
 .space-left {
@@ -425,13 +433,16 @@ hr {
 }
 
 #low-red {
-    margin-left: 7px;
+    margin-left: 10.5px;
     padding: 6px 10px;
     display: flex;
     gap: 5px;
     color: red;
     fill: red;
-    transform: translateY(-3x);
+}
+
+#low-red svg {
+    transform: translateY(3px);
 }
 
 

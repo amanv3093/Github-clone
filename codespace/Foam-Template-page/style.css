@@ -8,11 +8,13 @@
 
 body {
     overflow-x: hidden;
+    height: auto;
+    width: 100vw;
 }
 
 .container {
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    width: 100%;
     background-color: #FFFFFF;
     display: flex;
 }
@@ -43,7 +45,7 @@ body {
     margin-bottom: 0.5rem;
     border-radius: 5px;
     font-size: 14px;
-    font-weight: 500;
+    /* font-weight: 500; */
     cursor: pointer;
 }
 
@@ -66,6 +68,7 @@ body {
 .abc span a {
     text-decoration: none;
     color: black;
+    font-weight: 400;
 }
 
 .abc-2 {
@@ -102,7 +105,13 @@ body {
 
 .abc-2 span a {
     text-decoration: none;
-    color: #616365;
+    color: black;
+    font-weight: 400;
+}
+
+.left-border span a {
+    color: black;
+    font-weight: 500;
 }
 
 .reposetery {
@@ -137,34 +146,31 @@ body {
 #docs {
     border: 1px solid rgb(217, 217, 217);
     border-radius: 5px;
-    padding: 3px 10px;
+    padding: 6px 10px;
     background-color: #F6F8FA;
-}
-
-#docs a {
     color: black;
     font-size: 14px;
     font-weight: 500;
 }
 
+
 #new {
-    border: 1px solid rgb(217, 217, 217);
+    /* border: 1px solid rgb(217, 217, 217); */
     margin-left: 10px;
     border-radius: 5px;
-    padding: 4px 8px;
+    padding: 7px 12px;
     background-color: #1A7F37;
-}
-
-#new a {
     color: white;
     font-size: 14px;
     font-weight: 500;
 }
 
+
+
 .box {
     width: 100%;
     height: 60%;
-    /* border: 1.3px solid rgb(217, 217, 217); */
+    border: 1.3px solid rgb(217, 217, 217);
     margin-top: 2rem;
     border-radius: 5px;
     /* background-color: #F6F8FA; */
@@ -172,7 +178,7 @@ body {
 }
 
 .space-disco {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     width: 100%;
     height: 40%;
     border: 1px solid rgb(217, 217, 217);
@@ -198,12 +204,12 @@ hr {
 
 .disco-2 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: -1rem;
 }
 
 .space-left {
-    width: 50%;
     padding: 8px 10px;
 }
 
@@ -237,7 +243,6 @@ hr {
 
 
 .space-right {
-    width: 50%;
     font-size: 12px;
     color: #616365;
 }
@@ -323,11 +328,16 @@ hr {
 }
 
 #low-red {
-    margin-left: 7px;
+    margin-left: 10.5px;
     padding: 6px 10px;
     display: flex;
     gap: 5px;
     color: red;
+    fill: red;
+}
+
+#low-red svg {
+    transform: translateY(3px);
 }
 
 
@@ -341,9 +351,8 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.8rem;
-    margin-bottom: 2.5rem;
-    margin-top: -13rem;
+    gap: 1.3%;
+    margin-top: 7rem;
 }
 .footer p {
     opacity: 0.6;

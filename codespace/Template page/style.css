@@ -43,7 +43,7 @@ body {
     margin-bottom: 0.5rem;
     border-radius: 5px;
     font-size: 14px;
-    font-weight: 500;
+    /* font-weight: 500; */
     cursor: pointer;
 }
 
@@ -66,6 +66,7 @@ body {
 .abc span a {
     text-decoration: none;
     color: black;
+    font-weight: 400;
 }
 
 .abc-2 {
@@ -86,7 +87,10 @@ body {
 .left-blue {
     border-left: 3px solid #0a58ca;
     background-color: #F0F2F4;
+    margin-top: 0.3rem;
 }
+
+
 .abc-2:hover {
     background-color: #F0F2F4;
 }
@@ -102,7 +106,13 @@ body {
 
 .abc-2 span a {
     text-decoration: none;
-    color: #616365;
+    color: black;
+    font-weight: 375;
+}
+
+.left-blue span a {
+    font-weight: 500;
+    color: black;
 }
 
 .reposetery {
