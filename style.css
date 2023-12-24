@@ -2558,6 +2558,7 @@ gap: 1px;
 }
 
 @media screen and (max-width:320px){
+    
     .header-search{
 gap: 3px !important;
     }
@@ -2725,6 +2726,9 @@ line-height: 18px !important;
 .section-left-filter{
 
     justify-content: space-between;
+}
+.iframe{
+    width: 100%  !important;
 }
 
     }
@@ -2897,6 +2901,8 @@ line-height: 18px !important;
 
         justify-content: space-between;
     }
-    
+    .iframe{
+        width: 100% !important;
+    }
         } 
 
