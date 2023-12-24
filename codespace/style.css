@@ -133,7 +133,7 @@ body {
 #docs {
     border: 1px solid rgb(217, 217, 217);
     border-radius: 5px;
-    padding: 3px 10px;
+    padding: 6px 10px;
     background-color: #F6F8FA;
     color: black;
     font-size: 14px;
@@ -142,10 +142,10 @@ body {
 
 
 #new {
-    border: 1px solid rgb(217, 217, 217);
+    /* border: 1px solid rgb(217, 217, 217); */
     margin-left: 10px;
     border-radius: 5px;
-    padding: 4px 8px;
+    padding: 7px 12px;
     background-color: #1A7F37;
     color: white;
     font-size: 14px;
@@ -430,6 +430,8 @@ hr {
     display: flex;
     gap: 5px;
     color: red;
+    fill: red;
+    transform: translateY(-3x);
 }
 
 
