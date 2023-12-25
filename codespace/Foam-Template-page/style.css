@@ -327,6 +327,10 @@ hr {
     font-size: 14px;
 }
 
+#trans {
+    transform: translate(9px, 2px);
+}
+
 #low-red {
     margin-left: 10.5px;
     padding: 6px 10px;
