@@ -1,1150 +1,1362 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./GitHub-Mark-ea2971cee799-removebg-preview.png"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New repository</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="icon" type="image/x-icon" href="GitHub-Mark-ea2971cee799-removebg-preview.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    <header>
-        <div class="navbar">
-          <div class="header-logo">
-            <div class="menu-1">
-              <button class="menu-1-button" onclick="menuopen()">
-                <span class="material-symbols-outlined"> menu </span>
-              </button>
-            </div>
-            <div class="logo-1">
-              <a href="#">
-                <img src="GitHub-Mark-ea2971cee799-removebg-preview.png" alt=""
-              /></a>
-            </div>
-            <div class="dashboard">
-              <span>Dashboard</span>
-              <span class="dash-b">Dash...</span>
-            </div>
-            <div class="menu-list" id="openmenu">
-              <div class="menu-all">
-                <div class="menu-list-s1">
-                  <div class="logo-2">
-                    <a href="#">
-                      <img
-                        src="GitHub-Mark-ea2971cee799-removebg-preview.png"
-                        alt=""
-                    /></a>
-                  </div>
-                  <div class="cancel" onclick="menuopen()" id="openmenu">
-                    <span class="material-symbols-outlined"> close </span>
-                  </div>
-                </div>
-  
-                <div class="menu-icon-section1-head">
-                  <div class="menu-icon-1">
-                    <div class="home-2 common-icon-2">
-                      <a class="anchor-2" href="">
-                        <svg
-                          aria-hidden="true"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          version="1.1"
-                          width="16"
-                          data-view-component="true"
-                          class="octicon octicon-home"
-                        >
-                          <path
-                            d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z"
-                          ></path>
-                        </svg>
-                        <span>Home</span>
-                      </a>
-                    </div>
-                    <div class="issues-2 common-icon-2">
-                      <a class="anchor-2" href="">
-                        <svg
-                          aria-hidden="true"
-                          height="16"
-                          version="1.1"
-                          width="16"
-                          data-view-component="true"
-                          class="octicon octicon-issue-opened Button-visual"
-                        >
-                          <path
-                            d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
-                          ></path>
-                          <path
-                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"
-                          ></path>
-                        </svg>
-                        <span>Issues</span>
-                      </a>
-                    </div>
-                    <div class="pull-request-2 common-icon-2">
-                      <a class="anchor-2" href="">
-                        <svg
-                          aria-hidden="true"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          version="1.1"
-                          width="16"
-                          data-view-component="true"
-                          class="octicon octicon-git-pull-request Button-visual"
-                        >
-                          <path
-                            d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
-                          ></path>
-                        </svg>
-                        <span>Pull requests</span>
-                      </a>
-                    </div>
-                    <div class="project-2 common-icon-2">
-                      <a class="anchor-2" href="">
-                        <svg
-                          aria-hidden="true"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          version="1.1"
-                          width="16"
-                          data-view-component="true"
-                          class="octicon octicon-table"
-                        >
-                          <path
-                            d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z"
-                          ></path>
-                        </svg>
-                        <span>Projects</span>
-                      </a>
-                    </div>
-                    <div class="discussions-2 common-icon-2">
-                      <a class="anchor-2" href="">
-                        <svg
-                          aria-hidden="true"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          version="1.1"
-                          width="16"
-                          data-view-component="true"
-                          class="octicon octicon-comment-discussion"
-                        >
-                          <path
-                            d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"
-                          ></path>
-                        </svg>
-                        <span>Discussions</span>
-                      </a>
-                    </div>
-                    <div class="codespaces-2 common-icon-2">
-                      <a class="anchor-2" href="./codespace/index.html">
-                        <svg
-                          aria-hidden="true"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          version="1.1"
-                          width="16"
-                          data-view-component="true"
-                          class="octicon octicon-codespaces"
-                        >
-                          <path
-                            d="M0 11.25c0-.966.784-1.75 1.75-1.75h12.5c.966 0 1.75.784 1.75 1.75v3A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm2-9.5C2 .784 2.784 0 3.75 0h8.5C13.216 0 14 .784 14 1.75v5a1.75 1.75 0 0 1-1.75 1.75h-8.5A1.75 1.75 0 0 1 2 6.75Zm1.75-.25a.25.25 0 0 0-.25.25v5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5a.25.25 0 0 0-.25-.25Zm-2 9.5a.25.25 0 0 0-.25.25v3c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-3a.25.25 0 0 0-.25-.25Z"
-                          ></path>
-                          <path
-                            d="M7 12.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm-4 0a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Z"
-                          ></path>
-                        </svg>
-                        <span>Codespaces</span>
-                      </a>
-                    </div>
-                  </div>
-  
-                  <div class="menu-icon-1 menu-icon-2">
-                    <div class="home-2 common-icon-2">
-                      <a class="anchor-2" href="">
-                        <svg
-                          aria-hidden="true"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          version="1.1"
-                          width="16"
-                          data-view-component="true"
-                          class="octicon octicon-telescope"
-                        >
-                          <path
-                            d="M14.184 1.143v-.001l1.422 2.464a1.75 1.75 0 0 1-.757 2.451L3.104 11.713a1.75 1.75 0 0 1-2.275-.702l-.447-.775a1.75 1.75 0 0 1 .53-2.32L11.682.573a1.748 1.748 0 0 1 2.502.57Zm-4.709 9.32h-.001l2.644 3.863a.75.75 0 1 1-1.238.848l-1.881-2.75v2.826a.75.75 0 0 1-1.5 0v-2.826l-1.881 2.75a.75.75 0 1 1-1.238-.848l2.049-2.992a.746.746 0 0 1 .293-.253l1.809-.87a.749.749 0 0 1 .944.252ZM9.436 3.92h-.001l-4.97 3.39.942 1.63 5.42-2.61Zm3.091-2.108h.001l-1.85 1.26 1.505 2.605 2.016-.97a.247.247 0 0 0 .13-.151.247.247 0 0 0-.022-.199l-1.422-2.464a.253.253 0 0 0-.161-.119.254.254 0 0 0-.197.038ZM1.756 9.157a.25.25 0 0 0-.075.33l.447.775a.25.25 0 0 0 .325.1l1.598-.769-.83-1.436-1.465 1Z"
-                          ></path>
-                        </svg>
-                        <span>Explore</span>
-                      </a>
-                    </div>
-                    <div class="issues-2 common-icon-2">
-                      <a class="anchor-2" href="">
-                        <svg
-                          aria-hidden="true"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          version="1.1"
-                          width="16"
-                          data-view-component="true"
-                          class="octicon octicon-gift"
-                        >
-                          <path
-                            d="M2 2.75A2.75 2.75 0 0 1 4.75 0c.983 0 1.873.42 2.57 1.232.268.318.497.668.68 1.042.183-.375.411-.725.68-1.044C9.376.42 10.266 0 11.25 0a2.75 2.75 0 0 1 2.45 4h.55c.966 0 1.75.784 1.75 1.75v2c0 .698-.409 1.301-1 1.582v4.918A1.75 1.75 0 0 1 13.25 16H2.75A1.75 1.75 0 0 1 1 14.25V9.332C.409 9.05 0 8.448 0 7.75v-2C0 4.784.784 4 1.75 4h.55c-.192-.375-.3-.8-.3-1.25ZM7.25 9.5H2.5v4.75c0 .138.112.25.25.25h4.5Zm1.5 0v5h4.5a.25.25 0 0 0 .25-.25V9.5Zm0-4V8h5.5a.25.25 0 0 0 .25-.25v-2a.25.25 0 0 0-.25-.25Zm-7 0a.25.25 0 0 0-.25.25v2c0 .138.112.25.25.25h5.5V5.5h-5.5Zm3-4a1.25 1.25 0 0 0 0 2.5h2.309c-.233-.818-.542-1.401-.878-1.793-.43-.502-.915-.707-1.431-.707ZM8.941 4h2.309a1.25 1.25 0 0 0 0-2.5c-.516 0-1 .205-1.43.707-.337.392-.646.975-.879 1.793Z"
-                          ></path>
-                        </svg>
-                        <span>Marketplace</span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="menu-icon-3">
-                    <div class="icon-3-search">
-                      <div class="repo-text">Repositories</div>
-                      <div class="search"  onclick="innersrch()" id="srch-3-hidden">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search Button-visual">
-                          <path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path>
-                      </svg>
-                      </div>
-                    </div>
-                    <section  id="srch-3-hidden2">
-                    <div class="repo-search-hidden">
-                      <div class="inner-srch-2">
-                     <div class="srch-3">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search Button-visual">
-                          <path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path>
-                      </svg>
-                    </div>
-                       <input type="text" id="text-333" placeholder="Filter repositories">
-                       <div class="search-3" onclick="erase()" id="openmenu">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x-circle-fill">
-                          <path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z"></path>
-                      </svg>
-                      </div>
-                    </div>
-                       
-                       <div class="upper-srch-2" onclick="innersrch()">
-                     <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-chevron-up Button-visual">
-                      <path d="M3.22 10.53a.749.749 0 0 1 0-1.06l4.25-4.25a.749.749 0 0 1 1.06 0l4.25 4.25a.749.749 0 1 1-1.06 1.06L8 6.811 4.28 10.53a.749.749 0 0 1-1.06 0Z"></path>
-                  </svg>
-                       </div>
-                    </div>
-                  </section>
-                    
-                    <div class="home-2 common-icon-2">
-                      <a class="anchor-2" href="">
-                        <div class="profile-2"></div>
-                        <span>Github-Project-1</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-2">
-                      <a class="anchor-2" href="">
-                        <div class="profile-2"></div>
-                        <span>Github-Project-2</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-2">
-                      <a class="anchor-2" href="">
-                        <div class="profile-2"></div>
-                        <span>Github-Project-3</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-2">
-                      <a class="anchor-2" href="">
-                        <div class="profile-2"></div>
-                        <span>Github-Project-4</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-2">
-                      <a class="anchor-2" href="">
-                        <div class="profile-2"></div>
-                        <span>Github-Project-5</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-2">
-                      <a class="anchor-2" href="">
-                        <div class="profile-2"></div>
-                        <span>Github-Project-6</span>
-                      </a>
-                    </div>
-                  </div>
-  
-                  <div class="copyright-2">
-                    <p>© 2023 GitHub, Inc.</p>
-                    <ul>
-                      <li><a href="">About</a></li>
-                      <li><a href="">Blog</a></li>
-                      <li><a href="">Terms</a></li>
-                      <li><a href="">Privacy</a></li>
-                      <li><a href="">Security</a></li>
-                      <li><a href="">Status</a></li>
-                    </ul>
-                  </div>
-                </div>
+  <header>
+    <div class="navbar">
+      <div class="header-logo">
+        <div class="menu-1">
+          <button class="menu-1-button" onclick="menuopen()">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+        </div>
+        <div class="logo-1">
+          <a href="#">
+            <img src="GitHub-Mark-ea2971cee799-removebg-preview.png" alt="" /></a>
+        </div>
+        <div class="dashboard">
+          <span>New repository</span>
+          <span class="dash-b">New...</span>
+        </div>
+        <div class="menu-list" id="openmenu">
+          <div class="menu-all">
+            <div class="menu-list-s1">
+              <div class="logo-2">
+                <a href="#">
+                  <img src="GitHub-Mark-ea2971cee799-removebg-preview.png" alt="" /></a>
+              </div>
+              <div class="cancel" onclick="menuopen()" id="openmenu">
+                <span class="material-symbols-outlined"> close </span>
               </div>
             </div>
-            <div class="menu-list-2" id="openmenu2">
-              <div class="menu-all-2">
-                <div class="menu-list-s2">
-                  <div class="logo-22">
-                    <a href="#">
-                      <img
-                        src="115875004.png"
-                        alt=""
-                    />
+
+            <div class="menu-icon-section1-head">
+              <div class="menu-icon-1">
+                <div class="home-2 common-icon-2">
+                  <a class="anchor-2" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-home">
+                      <path
+                        d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z">
+                      </path>
+                    </svg>
+                    <span>Home</span>
+                  </a>
+                </div>
+                <div class="issues-2 common-icon-2">
+                  <a class="anchor-2" href="">
+                    <svg aria-hidden="true" height="16" version="1.1" width="16" data-view-component="true"
+                      class="octicon octicon-issue-opened Button-visual">
+                      <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                      <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
+                    </svg>
+                    <span>Issues</span>
+                  </a>
+                </div>
+                <div class="pull-request-2 common-icon-2">
+                  <a class="anchor-2" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-git-pull-request Button-visual">
+                      <path
+                        d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z">
+                      </path>
+                    </svg>
+                    <span>Pull requests</span>
+                  </a>
+                </div>
+                <div class="project-2 common-icon-2">
+                  <a class="anchor-2" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-table">
+                      <path
+                        d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z">
+                      </path>
+                    </svg>
+                    <span>Projects</span>
+                  </a>
+                </div>
+                <div class="discussions-2 common-icon-2">
+                  <a class="anchor-2" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-comment-discussion">
+                      <path
+                        d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z">
+                      </path>
+                    </svg>
+                    <span>Discussions</span>
+                  </a>
+                </div>
+                <div class="codespaces-2 common-icon-2">
+                  <a class="anchor-2" href="./codespace/index.html">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-codespaces">
+                      <path
+                        d="M0 11.25c0-.966.784-1.75 1.75-1.75h12.5c.966 0 1.75.784 1.75 1.75v3A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm2-9.5C2 .784 2.784 0 3.75 0h8.5C13.216 0 14 .784 14 1.75v5a1.75 1.75 0 0 1-1.75 1.75h-8.5A1.75 1.75 0 0 1 2 6.75Zm1.75-.25a.25.25 0 0 0-.25.25v5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5a.25.25 0 0 0-.25-.25Zm-2 9.5a.25.25 0 0 0-.25.25v3c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-3a.25.25 0 0 0-.25-.25Z">
+                      </path>
+                      <path
+                        d="M7 12.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm-4 0a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Z">
+                      </path>
+                    </svg>
+                    <span>Codespaces</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="menu-icon-1 menu-icon-2">
+                <div class="home-2 common-icon-2">
+                  <a class="anchor-2" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-telescope">
+                      <path
+                        d="M14.184 1.143v-.001l1.422 2.464a1.75 1.75 0 0 1-.757 2.451L3.104 11.713a1.75 1.75 0 0 1-2.275-.702l-.447-.775a1.75 1.75 0 0 1 .53-2.32L11.682.573a1.748 1.748 0 0 1 2.502.57Zm-4.709 9.32h-.001l2.644 3.863a.75.75 0 1 1-1.238.848l-1.881-2.75v2.826a.75.75 0 0 1-1.5 0v-2.826l-1.881 2.75a.75.75 0 1 1-1.238-.848l2.049-2.992a.746.746 0 0 1 .293-.253l1.809-.87a.749.749 0 0 1 .944.252ZM9.436 3.92h-.001l-4.97 3.39.942 1.63 5.42-2.61Zm3.091-2.108h.001l-1.85 1.26 1.505 2.605 2.016-.97a.247.247 0 0 0 .13-.151.247.247 0 0 0-.022-.199l-1.422-2.464a.253.253 0 0 0-.161-.119.254.254 0 0 0-.197.038ZM1.756 9.157a.25.25 0 0 0-.075.33l.447.775a.25.25 0 0 0 .325.1l1.598-.769-.83-1.436-1.465 1Z">
+                      </path>
+                    </svg>
+                    <span>Explore</span>
+                  </a>
+                </div>
+                <div class="issues-2 common-icon-2">
+                  <a class="anchor-2" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-gift">
+                      <path
+                        d="M2 2.75A2.75 2.75 0 0 1 4.75 0c.983 0 1.873.42 2.57 1.232.268.318.497.668.68 1.042.183-.375.411-.725.68-1.044C9.376.42 10.266 0 11.25 0a2.75 2.75 0 0 1 2.45 4h.55c.966 0 1.75.784 1.75 1.75v2c0 .698-.409 1.301-1 1.582v4.918A1.75 1.75 0 0 1 13.25 16H2.75A1.75 1.75 0 0 1 1 14.25V9.332C.409 9.05 0 8.448 0 7.75v-2C0 4.784.784 4 1.75 4h.55c-.192-.375-.3-.8-.3-1.25ZM7.25 9.5H2.5v4.75c0 .138.112.25.25.25h4.5Zm1.5 0v5h4.5a.25.25 0 0 0 .25-.25V9.5Zm0-4V8h5.5a.25.25 0 0 0 .25-.25v-2a.25.25 0 0 0-.25-.25Zm-7 0a.25.25 0 0 0-.25.25v2c0 .138.112.25.25.25h5.5V5.5h-5.5Zm3-4a1.25 1.25 0 0 0 0 2.5h2.309c-.233-.818-.542-1.401-.878-1.793-.43-.502-.915-.707-1.431-.707ZM8.941 4h2.309a1.25 1.25 0 0 0 0-2.5c-.516 0-1 .205-1.43.707-.337.392-.646.975-.879 1.793Z">
+                      </path>
+                    </svg>
+                    <span>Marketplace</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu-icon-3">
+                <div class="icon-3-search">
+                  <div class="repo-text">Repositories</div>
+                  <div class="search" onclick="innersrch()" id="srch-3-hidden">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-search Button-visual">
+                      <path
+                        d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <section id="srch-3-hidden2">
+                  <div class="repo-search-hidden">
+                    <div class="inner-srch-2">
+                      <div class="srch-3">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                          data-view-component="true" class="octicon octicon-search Button-visual">
+                          <path
+                            d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z">
+                          </path>
+                        </svg>
+                      </div>
+                      <input type="text" id="text-333" placeholder="Filter repositories">
+                      <div class="search-3" onclick="erase()" id="openmenu">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                          data-view-component="true" class="octicon octicon-x-circle-fill">
+                          <path
+                            d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="upper-srch-2" onclick="innersrch()">
+                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-chevron-up Button-visual">
+                        <path
+                          d="M3.22 10.53a.749.749 0 0 1 0-1.06l4.25-4.25a.749.749 0 0 1 1.06 0l4.25 4.25a.749.749 0 1 1-1.06 1.06L8 6.811 4.28 10.53a.749.749 0 0 1-1.06 0Z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                </section>
+
+                <div class="home-2 common-icon-2">
+                  <a class="anchor-2" href="">
+                    <div class="profile-2"></div>
+                    <span>Github-Project-1</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-2">
+                  <a class="anchor-2" href="">
+                    <div class="profile-2"></div>
+                    <span>Github-Project-2</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-2">
+                  <a class="anchor-2" href="">
+                    <div class="profile-2"></div>
+                    <span>Github-Project-3</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-2">
+                  <a class="anchor-2" href="">
+                    <div class="profile-2"></div>
+                    <span>Github-Project-4</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-2">
+                  <a class="anchor-2" href="">
+                    <div class="profile-2"></div>
+                    <span>Github-Project-5</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-2">
+                  <a class="anchor-2" href="">
+                    <div class="profile-2"></div>
+                    <span>Github-Project-6</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="copyright-2">
+                <p>© 2023 GitHub, Inc.</p>
+                <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Terms</a></li>
+                  <li><a href="">Privacy</a></li>
+                  <li><a href="">Security</a></li>
+                  <li><a href="">Status</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-list-2" id="openmenu2">
+          <div class="menu-all-2">
+            <div class="menu-list-s2">
+              <div class="logo-22">
+                <a href="#">
+                  <img src="115875004.png" alt="" />
                   <span>amanv3093</span></a>
-                  </div>
-                 
-                  <div class="cancel-2" onclick="menuopen2()" >
-                    <span class="material-symbols-outlined"> close </span>
-                  </div>
-                </div>
-  
-                <div class="menu-icon-section2-head">
-                  <div class="menu-icon-3">
-                    <div class="home-2 common-icon-3" onclick="setstatus()">
-                      <div class="anchor-3" >
-                      
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-smiley">
-                          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm3.82 1.636a.75.75 0 0 1 1.038.175l.007.009c.103.118.22.222.35.31.264.178.683.37 1.285.37.602 0 1.02-.192 1.285-.371.13-.088.247-.192.35-.31l.007-.008a.75.75 0 0 1 1.222.87l-.022-.015c.02.013.021.015.021.015v.001l-.001.002-.002.003-.005.007-.014.019a2.066 2.066 0 0 1-.184.213c-.16.166-.338.316-.53.445-.63.418-1.37.638-2.127.629-.946 0-1.652-.308-2.126-.63a3.331 3.331 0 0 1-.715-.657l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 0 1 .183-1.044ZM12 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM5 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm5.25 2.25.592.416a97.71 97.71 0 0 0-.592-.416Z"></path>
-                      </svg>
-                        <span>Set status</span>
-                      </div>
-                    </div>
-  
-                    
-                    
-                  </div>
-  
-                  <div class="menu-icon-3">
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-person">
-                          <path d="M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
-                      </svg>
-                        <span>Your Profile</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="/Add-account/signin.html">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-person-add">
-                          <path d="M7.9 8.548h-.001a5.528 5.528 0 0 1 3.1 4.659.75.75 0 1 1-1.498.086A4.01 4.01 0 0 0 5.5 9.5a4.01 4.01 0 0 0-4.001 3.793.75.75 0 1 1-1.498-.085 5.527 5.527 0 0 1 3.1-4.66 3.5 3.5 0 1 1 4.799 0ZM13.25 0a.75.75 0 0 1 .75.75V2h1.25a.75.75 0 0 1 0 1.5H14v1.25a.75.75 0 0 1-1.5 0V3.5h-1.25a.75.75 0 0 1 0-1.5h1.25V.75a.75.75 0 0 1 .75-.75ZM5.5 4a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 4Z"></path>
-                      </svg>
-                        <span>Add account</span>
-                      </a>
-                    </div>
-  
-                    
-                    
-                  </div>
-  
-                  <div class="menu-icon-3">
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo">
-                          <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                      </svg>
-                        
-                        <span>Your repositories</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-project">
-                          <path d="M1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0ZM1.5 1.75v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25ZM11.75 3a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 1-1.5 0v-7.5a.75.75 0 0 1 .75-.75Zm-8.25.75a.75.75 0 0 1 1.5 0v5.5a.75.75 0 0 1-1.5 0ZM8 3a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 3Z"></path>
-                      </svg>
-                        
-                        <span>Your projects</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-organization">
-                          <path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path>
-                      </svg>
-                        
-                        <span>Your organizations</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-globe">
-                          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM5.78 8.75a9.64 9.64 0 0 0 1.363 4.177c.255.426.542.832.857 1.215.245-.296.551-.705.857-1.215A9.64 9.64 0 0 0 10.22 8.75Zm4.44-1.5a9.64 9.64 0 0 0-1.363-4.177c-.307-.51-.612-.919-.857-1.215a9.927 9.927 0 0 0-.857 1.215A9.64 9.64 0 0 0 5.78 7.25Zm-5.944 1.5H1.543a6.507 6.507 0 0 0 4.666 5.5c-.123-.181-.24-.365-.352-.552-.715-1.192-1.437-2.874-1.581-4.948Zm-2.733-1.5h2.733c.144-2.074.866-3.756 1.58-4.948.12-.197.237-.381.353-.552a6.507 6.507 0 0 0-4.666 5.5Zm10.181 1.5c-.144 2.074-.866 3.756-1.58 4.948-.12.197-.237.381-.353.552a6.507 6.507 0 0 0 4.666-5.5Zm2.733-1.5a6.507 6.507 0 0 0-4.666-5.5c.123.181.24.365.353.552.714 1.192 1.436 2.874 1.58 4.948Z"></path>
-                      </svg>
-                        
-                        <span>Your enterprises</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star">
-                          <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
-                      </svg>
-                        
-                        <span>
-                          Your stars</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart">
-                          <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
-                      </svg>
-                        
-                        <span>
-                          Your sponsors</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code-square">
-                          <path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25Zm7.47 3.97a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L10.69 8 9.22 6.53a.75.75 0 0 1 0-1.06ZM6.78 6.53 5.31 8l1.47 1.47a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-2-2a.75.75 0 0 1 0-1.06l2-2a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path>
-                      </svg>
-                        
-                        <span>
-                          Your gists</span>
-                      </a>
-                    </div>
-  
-                    
-                    
-                  </div>
-  
-                  <div class="menu-icon-3">
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-upload">
-                          <path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"></path><path d="M11.78 4.72a.749.749 0 1 1-1.06 1.06L8.75 3.811V9.5a.75.75 0 0 1-1.5 0V3.811L5.28 5.78a.749.749 0 1 1-1.06-1.06l3.25-3.25a.749.749 0 0 1 1.06 0l3.25 3.25Z"></path>
-                      </svg>
-                        
-                        <span>Upgrade</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-globe">
-                          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM5.78 8.75a9.64 9.64 0 0 0 1.363 4.177c.255.426.542.832.857 1.215.245-.296.551-.705.857-1.215A9.64 9.64 0 0 0 10.22 8.75Zm4.44-1.5a9.64 9.64 0 0 0-1.363-4.177c-.307-.51-.612-.919-.857-1.215a9.927 9.927 0 0 0-.857 1.215A9.64 9.64 0 0 0 5.78 7.25Zm-5.944 1.5H1.543a6.507 6.507 0 0 0 4.666 5.5c-.123-.181-.24-.365-.352-.552-.715-1.192-1.437-2.874-1.581-4.948Zm-2.733-1.5h2.733c.144-2.074.866-3.756 1.58-4.948.12-.197.237-.381.353-.552a6.507 6.507 0 0 0-4.666 5.5Zm10.181 1.5c-.144 2.074-.866 3.756-1.58 4.948-.12.197-.237.381-.353.552a6.507 6.507 0 0 0 4.666-5.5Zm2.733-1.5a6.507 6.507 0 0 0-4.666-5.5c.123.181.24.365.353.552.714 1.192 1.436 2.874 1.58 4.948Z"></path>
-                      </svg>
-                        
-                        <span>Try Enterprise</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copilot">
-                          <path d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z"></path><path d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z"></path>
-                      </svg>
-                        <span>Copilot</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-beaker">
-                          <path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.746.746 0 0 1 9.5 6Z"></path>
-                      </svg>
-                        <span>Feature preview</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-gear">
-                          <path d="M8 0a8.2 8.2 0 0 1 .701.031C9.444.095 9.99.645 10.16 1.29l.288 1.107c.018.066.079.158.212.224.231.114.454.243.668.386.123.082.233.09.299.071l1.103-.303c.644-.176 1.392.021 1.82.63.27.385.506.792.704 1.218.315.675.111 1.422-.364 1.891l-.814.806c-.049.048-.098.147-.088.294.016.257.016.515 0 .772-.01.147.038.246.088.294l.814.806c.475.469.679 1.216.364 1.891a7.977 7.977 0 0 1-.704 1.217c-.428.61-1.176.807-1.82.63l-1.102-.302c-.067-.019-.177-.011-.3.071a5.909 5.909 0 0 1-.668.386c-.133.066-.194.158-.211.224l-.29 1.106c-.168.646-.715 1.196-1.458 1.26a8.006 8.006 0 0 1-1.402 0c-.743-.064-1.289-.614-1.458-1.26l-.289-1.106c-.018-.066-.079-.158-.212-.224a5.738 5.738 0 0 1-.668-.386c-.123-.082-.233-.09-.299-.071l-1.103.303c-.644.176-1.392-.021-1.82-.63a8.12 8.12 0 0 1-.704-1.218c-.315-.675-.111-1.422.363-1.891l.815-.806c.05-.048.098-.147.088-.294a6.214 6.214 0 0 1 0-.772c.01-.147-.038-.246-.088-.294l-.815-.806C.635 6.045.431 5.298.746 4.623a7.92 7.92 0 0 1 .704-1.217c.428-.61 1.176-.807 1.82-.63l1.102.302c.067.019.177.011.3-.071.214-.143.437-.272.668-.386.133-.066.194-.158.211-.224l.29-1.106C6.009.645 6.556.095 7.299.03 7.53.01 7.764 0 8 0Zm-.571 1.525c-.036.003-.108.036-.137.146l-.289 1.105c-.147.561-.549.967-.998 1.189-.173.086-.34.183-.5.29-.417.278-.97.423-1.529.27l-1.103-.303c-.109-.03-.175.016-.195.045-.22.312-.412.644-.573.99-.014.031-.021.11.059.19l.815.806c.411.406.562.957.53 1.456a4.709 4.709 0 0 0 0 .582c.032.499-.119 1.05-.53 1.456l-.815.806c-.081.08-.073.159-.059.19.162.346.353.677.573.989.02.03.085.076.195.046l1.102-.303c.56-.153 1.113-.008 1.53.27.161.107.328.204.501.29.447.222.85.629.997 1.189l.289 1.105c.029.109.101.143.137.146a6.6 6.6 0 0 0 1.142 0c.036-.003.108-.036.137-.146l.289-1.105c.147-.561.549-.967.998-1.189.173-.086.34-.183.5-.29.417-.278.97-.423 1.529-.27l1.103.303c.109.029.175-.016.195-.045.22-.313.411-.644.573-.99.014-.031.021-.11-.059-.19l-.815-.806c-.411-.406-.562-.957-.53-1.456a4.709 4.709 0 0 0 0-.582c-.032-.499.119-1.05.53-1.456l.815-.806c.081-.08.073-.159.059-.19a6.464 6.464 0 0 0-.573-.989c-.02-.03-.085-.076-.195-.046l-1.102.303c-.56.153-1.113.008-1.53-.27a4.44 4.44 0 0 0-.501-.29c-.447-.222-.85-.629-.997-1.189l-.289-1.105c-.029-.11-.101-.143-.137-.146a6.6 6.6 0 0 0-1.142 0ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM9.5 8a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 9.5 8Z"></path>
-                      </svg>
-                        
-                        <span>Settings</span>
-                      </a>
-                    </div>
-                    
-  
-                    
-                    
-                  </div>
-  
-                  <div class="menu-icon-3">
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book">
-                          <path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path>
-                      </svg>
-                        <span>GitHub Docs</span>
-                      </a>
-                    </div>
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="">
-                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-people">
-                          <path d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z"></path>
-                      </svg>
-                        <span>GitHub Support</span>
-                      </a>
-                    </div>
-  
-                    
-                    
-                  </div>
-                  <div class="menu-icon-3 sign-out-logo" >
-                    <div class="home-2 common-icon-3">
-                      <a class="anchor-3" href="/Sign-In/signin.html">
-                       <span>Sign-out</span>
-                      </a>
-                    </div>
-                  </div>
-  
-                </div>
-                
+              </div>
+
+              <div class="cancel-2" onclick="menuopen2()">
+                <span class="material-symbols-outlined"> close </span>
               </div>
             </div>
+
+            <div class="menu-icon-section2-head">
+              <div class="menu-icon-3">
+                <div class="home-2 common-icon-3" onclick="setstatus()">
+                  <div class="anchor-3">
+
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-smiley">
+                      <path
+                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm3.82 1.636a.75.75 0 0 1 1.038.175l.007.009c.103.118.22.222.35.31.264.178.683.37 1.285.37.602 0 1.02-.192 1.285-.371.13-.088.247-.192.35-.31l.007-.008a.75.75 0 0 1 1.222.87l-.022-.015c.02.013.021.015.021.015v.001l-.001.002-.002.003-.005.007-.014.019a2.066 2.066 0 0 1-.184.213c-.16.166-.338.316-.53.445-.63.418-1.37.638-2.127.629-.946 0-1.652-.308-2.126-.63a3.331 3.331 0 0 1-.715-.657l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 0 1 .183-1.044ZM12 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM5 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm5.25 2.25.592.416a97.71 97.71 0 0 0-.592-.416Z">
+                      </path>
+                    </svg>
+                    <span>Set status</span>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+              <div class="menu-icon-3">
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-person">
+                      <path
+                        d="M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z">
+                      </path>
+                    </svg>
+                    <span>Your Profile</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="/Add-account/signin.html">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-person-add">
+                      <path
+                        d="M7.9 8.548h-.001a5.528 5.528 0 0 1 3.1 4.659.75.75 0 1 1-1.498.086A4.01 4.01 0 0 0 5.5 9.5a4.01 4.01 0 0 0-4.001 3.793.75.75 0 1 1-1.498-.085 5.527 5.527 0 0 1 3.1-4.66 3.5 3.5 0 1 1 4.799 0ZM13.25 0a.75.75 0 0 1 .75.75V2h1.25a.75.75 0 0 1 0 1.5H14v1.25a.75.75 0 0 1-1.5 0V3.5h-1.25a.75.75 0 0 1 0-1.5h1.25V.75a.75.75 0 0 1 .75-.75ZM5.5 4a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 4Z">
+                      </path>
+                    </svg>
+                    <span>Add account</span>
+                  </a>
+                </div>
+
+
+
+              </div>
+
+              <div class="menu-icon-3">
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-repo">
+                      <path
+                        d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                      </path>
+                    </svg>
+
+                    <span>Your repositories</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-project">
+                      <path
+                        d="M1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0ZM1.5 1.75v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25ZM11.75 3a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 1-1.5 0v-7.5a.75.75 0 0 1 .75-.75Zm-8.25.75a.75.75 0 0 1 1.5 0v5.5a.75.75 0 0 1-1.5 0ZM8 3a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 3Z">
+                      </path>
+                    </svg>
+
+                    <span>Your projects</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-organization">
+                      <path
+                        d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z">
+                      </path>
+                    </svg>
+
+                    <span>Your organizations</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-globe">
+                      <path
+                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM5.78 8.75a9.64 9.64 0 0 0 1.363 4.177c.255.426.542.832.857 1.215.245-.296.551-.705.857-1.215A9.64 9.64 0 0 0 10.22 8.75Zm4.44-1.5a9.64 9.64 0 0 0-1.363-4.177c-.307-.51-.612-.919-.857-1.215a9.927 9.927 0 0 0-.857 1.215A9.64 9.64 0 0 0 5.78 7.25Zm-5.944 1.5H1.543a6.507 6.507 0 0 0 4.666 5.5c-.123-.181-.24-.365-.352-.552-.715-1.192-1.437-2.874-1.581-4.948Zm-2.733-1.5h2.733c.144-2.074.866-3.756 1.58-4.948.12-.197.237-.381.353-.552a6.507 6.507 0 0 0-4.666 5.5Zm10.181 1.5c-.144 2.074-.866 3.756-1.58 4.948-.12.197-.237.381-.353.552a6.507 6.507 0 0 0 4.666-5.5Zm2.733-1.5a6.507 6.507 0 0 0-4.666-5.5c.123.181.24.365.353.552.714 1.192 1.436 2.874 1.58 4.948Z">
+                      </path>
+                    </svg>
+
+                    <span>Your enterprises</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-star">
+                      <path
+                        d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                      </path>
+                    </svg>
+
+                    <span>
+                      Your stars</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-heart">
+                      <path
+                        d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z">
+                      </path>
+                    </svg>
+
+                    <span>
+                      Your sponsors</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-code-square">
+                      <path
+                        d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25Zm7.47 3.97a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L10.69 8 9.22 6.53a.75.75 0 0 1 0-1.06ZM6.78 6.53 5.31 8l1.47 1.47a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-2-2a.75.75 0 0 1 0-1.06l2-2a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z">
+                      </path>
+                    </svg>
+
+                    <span>
+                      Your gists</span>
+                  </a>
+                </div>
+
+
+
+              </div>
+
+              <div class="menu-icon-3">
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-upload">
+                      <path
+                        d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z">
+                      </path>
+                      <path
+                        d="M11.78 4.72a.749.749 0 1 1-1.06 1.06L8.75 3.811V9.5a.75.75 0 0 1-1.5 0V3.811L5.28 5.78a.749.749 0 1 1-1.06-1.06l3.25-3.25a.749.749 0 0 1 1.06 0l3.25 3.25Z">
+                      </path>
+                    </svg>
+
+                    <span>Upgrade</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-globe">
+                      <path
+                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM5.78 8.75a9.64 9.64 0 0 0 1.363 4.177c.255.426.542.832.857 1.215.245-.296.551-.705.857-1.215A9.64 9.64 0 0 0 10.22 8.75Zm4.44-1.5a9.64 9.64 0 0 0-1.363-4.177c-.307-.51-.612-.919-.857-1.215a9.927 9.927 0 0 0-.857 1.215A9.64 9.64 0 0 0 5.78 7.25Zm-5.944 1.5H1.543a6.507 6.507 0 0 0 4.666 5.5c-.123-.181-.24-.365-.352-.552-.715-1.192-1.437-2.874-1.581-4.948Zm-2.733-1.5h2.733c.144-2.074.866-3.756 1.58-4.948.12-.197.237-.381.353-.552a6.507 6.507 0 0 0-4.666 5.5Zm10.181 1.5c-.144 2.074-.866 3.756-1.58 4.948-.12.197-.237.381-.353.552a6.507 6.507 0 0 0 4.666-5.5Zm2.733-1.5a6.507 6.507 0 0 0-4.666-5.5c.123.181.24.365.353.552.714 1.192 1.436 2.874 1.58 4.948Z">
+                      </path>
+                    </svg>
+
+                    <span>Try Enterprise</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-copilot">
+                      <path
+                        d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z">
+                      </path>
+                      <path
+                        d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z">
+                      </path>
+                    </svg>
+                    <span>Copilot</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-beaker">
+                      <path
+                        d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.746.746 0 0 1 9.5 6Z">
+                      </path>
+                    </svg>
+                    <span>Feature preview</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-gear">
+                      <path
+                        d="M8 0a8.2 8.2 0 0 1 .701.031C9.444.095 9.99.645 10.16 1.29l.288 1.107c.018.066.079.158.212.224.231.114.454.243.668.386.123.082.233.09.299.071l1.103-.303c.644-.176 1.392.021 1.82.63.27.385.506.792.704 1.218.315.675.111 1.422-.364 1.891l-.814.806c-.049.048-.098.147-.088.294.016.257.016.515 0 .772-.01.147.038.246.088.294l.814.806c.475.469.679 1.216.364 1.891a7.977 7.977 0 0 1-.704 1.217c-.428.61-1.176.807-1.82.63l-1.102-.302c-.067-.019-.177-.011-.3.071a5.909 5.909 0 0 1-.668.386c-.133.066-.194.158-.211.224l-.29 1.106c-.168.646-.715 1.196-1.458 1.26a8.006 8.006 0 0 1-1.402 0c-.743-.064-1.289-.614-1.458-1.26l-.289-1.106c-.018-.066-.079-.158-.212-.224a5.738 5.738 0 0 1-.668-.386c-.123-.082-.233-.09-.299-.071l-1.103.303c-.644.176-1.392-.021-1.82-.63a8.12 8.12 0 0 1-.704-1.218c-.315-.675-.111-1.422.363-1.891l.815-.806c.05-.048.098-.147.088-.294a6.214 6.214 0 0 1 0-.772c.01-.147-.038-.246-.088-.294l-.815-.806C.635 6.045.431 5.298.746 4.623a7.92 7.92 0 0 1 .704-1.217c.428-.61 1.176-.807 1.82-.63l1.102.302c.067.019.177.011.3-.071.214-.143.437-.272.668-.386.133-.066.194-.158.211-.224l.29-1.106C6.009.645 6.556.095 7.299.03 7.53.01 7.764 0 8 0Zm-.571 1.525c-.036.003-.108.036-.137.146l-.289 1.105c-.147.561-.549.967-.998 1.189-.173.086-.34.183-.5.29-.417.278-.97.423-1.529.27l-1.103-.303c-.109-.03-.175.016-.195.045-.22.312-.412.644-.573.99-.014.031-.021.11.059.19l.815.806c.411.406.562.957.53 1.456a4.709 4.709 0 0 0 0 .582c.032.499-.119 1.05-.53 1.456l-.815.806c-.081.08-.073.159-.059.19.162.346.353.677.573.989.02.03.085.076.195.046l1.102-.303c.56-.153 1.113-.008 1.53.27.161.107.328.204.501.29.447.222.85.629.997 1.189l.289 1.105c.029.109.101.143.137.146a6.6 6.6 0 0 0 1.142 0c.036-.003.108-.036.137-.146l.289-1.105c.147-.561.549-.967.998-1.189.173-.086.34-.183.5-.29.417-.278.97-.423 1.529-.27l1.103.303c.109.029.175-.016.195-.045.22-.313.411-.644.573-.99.014-.031.021-.11-.059-.19l-.815-.806c-.411-.406-.562-.957-.53-1.456a4.709 4.709 0 0 0 0-.582c-.032-.499.119-1.05.53-1.456l.815-.806c.081-.08.073-.159.059-.19a6.464 6.464 0 0 0-.573-.989c-.02-.03-.085-.076-.195-.046l-1.102.303c-.56.153-1.113.008-1.53-.27a4.44 4.44 0 0 0-.501-.29c-.447-.222-.85-.629-.997-1.189l-.289-1.105c-.029-.11-.101-.143-.137-.146a6.6 6.6 0 0 0-1.142 0ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM9.5 8a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 9.5 8Z">
+                      </path>
+                    </svg>
+
+                    <span>Settings</span>
+                  </a>
+                </div>
+
+
+
+
+              </div>
+
+              <div class="menu-icon-3">
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-book">
+                      <path
+                        d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z">
+                      </path>
+                    </svg>
+                    <span>GitHub Docs</span>
+                  </a>
+                </div>
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                      data-view-component="true" class="octicon octicon-people">
+                      <path
+                        d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z">
+                      </path>
+                    </svg>
+                    <span>GitHub Support</span>
+                  </a>
+                </div>
+
+
+
+              </div>
+              <div class="menu-icon-3 sign-out-logo">
+                <div class="home-2 common-icon-3">
+                  <a class="anchor-3" href="/Sign-In/signin.html">
+                    <span>Sign-out</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
           </div>
-            <!-- Start -->
-            <div class="search-0012 create-file0032" id="search-00122">
-              <div class="search-0012-logo create-file0032" >
-                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search create-file0032">
-                  <path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path>
+        </div>
+      </div>
+      <!-- Start -->
+      <div class="search-0012 create-file0032" id="search-00122">
+        <div class="search-0012-logo create-file0032">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+            class="octicon octicon-search create-file0032">
+            <path
+              d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z">
+            </path>
+          </svg>
+          <input class="search-0012-input create-file0032" type="text" name="" id="">
+        </div>
+        <div class="search-0012-list create-file0032">
+          <div class="search-0012-owner create-file0032">
+            <h1>Owners</h1>
+            <a class="owner-list create-file0032" href="">
+              <div class="owner-list-repo create-file0032">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-repo create-file0032">
+                  <path
+                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                  </path>
+                </svg>
+                <p>amanv3093</p>
+              </div>
+              <p class="owner-list-ptag create-file0032">Jump to</p>
+            </a>
+
+            <a class="owner-list create-file0032" href="">
+              <div class="owner-list-repo create-file0032">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-repo create-file0032">
+                  <path
+                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                  </path>
+                </svg>
+                <p>amanv3093</p>
+              </div>
+              <p class="owner-list-ptag create-file0032">Jump to</p>
+            </a>
+
+
+            <a class="owner-list create-file0032" href="">
+              <div class="owner-list-repo create-file0032">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-repo create-file0032">
+                  <path
+                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                  </path>
+                </svg>
+                <p>amanv3093</p>
+              </div>
+              <p class="owner-list-ptag create-file0032">Jump to</p>
+            </a>
+
+          </div>
+          <div class=" search-0012-owner search-0012-repo create-file0032">
+            <h1>Repositories</h1>
+            <a class="owner-list create-file0032" href="">
+              <div class="owner-list-repo">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-repo create-file0032">
+                  <path
+                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                  </path>
+                </svg>
+                <p>GitHub-Project-1</p>
+              </div>
+              <p class="owner-list-ptag create-file0032">Jump to</p>
+            </a>
+            <a class="owner-list create-file0032" href="">
+              <div class="owner-list-repo create-file0032">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-repo create-file0032">
+                  <path
+                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                  </path>
+                </svg>
+                <p>GitHub-Project-1</p>
+              </div>
+              <p class="owner-list-ptag create-file0032">Jump to</p>
+            </a>
+            <a class="owner-list create-file0032" href="">
+              <div class="owner-list-repo create-file0032">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-repo create-file0032">
+                  <path
+                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                  </path>
+                </svg>
+                <p>GitHub-Project-1</p>
+              </div>
+              <p class="owner-list-ptag create-file0032">Jump to</p>
+            </a>
+            <a class="owner-list create-file0032" href="">
+              <div class="owner-list-repo create-file0032">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-repo create-file0032">
+                  <path
+                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                  </path>
+                </svg>
+                <p>GitHub-Project-1</p>
+              </div>
+              <p class="owner-list-ptag create-file0032">Jump to</p>
+            </a>
+            <a class="owner-list create-file0032" href="">
+              <div class="owner-list-repo create-file0032">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-repo create-file0032">
+                  <path
+                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                  </path>
+                </svg>
+                <p>GitHub-Project-1</p>
+              </div>
+              <p class="owner-list-ptag create-file0032">Jump to</p>
+            </a>
+            <a class="owner-list create-file0032" href="">
+              <div class="owner-list-repo create-file0032">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-repo create-file0032">
+                  <path
+                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                  </path>
+                </svg>
+                <p>GitHub-Project-1</p>
+              </div>
+              <p class="owner-list-ptag create-file0032">Jump to</p>
+            </a>
+            <a class="owner-list create-file0032" href="">
+              <div class="owner-list-repo create-file0032">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-repo create-file0032">
+                  <path
+                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                  </path>
+                </svg>
+                <p>GitHub-Project-1</p>
+              </div>
+              <p class="owner-list-ptag create-file0032">Jump to</p>
+            </a>
+            <a class="owner-list create-file0032" href="">
+              <div class="owner-list-repo create-file0032">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-repo create-file0032">
+                  <path
+                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                  </path>
+                </svg>
+                <p>GitHub-Project-1</p>
+              </div>
+              <p class="owner-list-ptag create-file0032">Jump to</p>
+            </a>
+            <a class="owner-list create-file0032" href="">
+              <div class="owner-list-repo create-file0032">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-repo create-file0032">
+                  <path
+                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                  </path>
+                </svg>
+                <p>GitHub-Project-1</p>
+              </div>
+              <p class="owner-list-ptag">Jump to</p>
+            </a>
+          </div>
+
+        </div>
+        <div class="search-0012-footer">
+          <a href="">Search syntax tips</a>
+          <a href="">Give feedback</a>
+
+
+        </div>
+
+      </div>
+
+      <div class="command-plalette-0030 " id="command-plalette-003">
+        <div class="command-plalette-search">
+          <div class="command-plalette-input">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+              class="octicon octicon-search color-fg-muted">
+              <path
+                d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z">
+              </path>
+            </svg>
+            <input type="text" name="" id="command-plalette-input0" placeholder="Search or jump to...">
+
+          </div>
+          <div class="command-plalette-cross" onclick="erase()">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+              class="octicon octicon-x-circle-fill">
+              <path
+                d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z">
+              </path>
+            </svg>
+
+          </div>
+
+        </div>
+        <div class="command-plalette-line"></div>
+        <div class="pages-01343">
+          <div class="pages-01343-top">
+            <h1><span class="pages-box-txt">Tip:</span> Type <span class="pages-box-sp">#</span> to search pull requests
+            </h1>
+            <h1>Type <span class="pages-box-sp">?</span> for help and tips</h1>
+
+          </div>
+          <div class="pages-01343-list-main">
+            <div class="pages-01343-list">
+              <h1>Pages</h1>
+              <a href="">
+                <div class="pages-icon">
+                  <span><svg height="16" class="octicon octicon-home color-fg-muted" viewBox="0 0 16 16" version="1.1"
+                      width="16" aria-hidden="true">
+                      <path
+                        d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z">
+                      </path>
+                    </svg></span>
+                  <p>Dashboard</p>
+                </div>
+                <h2 class="jump">Jump to</h2>
+              </a>
+              <a href="">
+                <div class="pages-icon">
+                  <span><svg height="16" class="octicon octicon-bell color-fg-muted" viewBox="0 0 16 16" version="1.1"
+                      width="16" aria-hidden="true">
+                      <path
+                        d="M8 16a2 2 0 0 0 1.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 0 0 8 16ZM3 5a5 5 0 0 1 10 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.519 1.519 0 0 1 13.482 13H2.518a1.516 1.516 0 0 1-1.263-2.36l1.703-2.554A.255.255 0 0 0 3 7.947Zm5-3.5A3.5 3.5 0 0 0 4.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.017.017 0 0 0-.003.01l.001.006c0 .002.002.004.004.006l.006.004.007.001h10.964l.007-.001.006-.004.004-.006.001-.007a.017.017 0 0 0-.003-.01l-1.703-2.554a1.745 1.745 0 0 1-.294-.97V5A3.5 3.5 0 0 0 8 1.5Z">
+                      </path>
+                    </svg></span>
+                  <p>Notifications</p>
+                </div>
+                <h2 class="jump">Jump to</h2>
+              </a>
+              <a href="">
+                <div class="pages-icon">
+                  <span><svg height="16" class="octicon octicon-issue-opened color-fg-muted" viewBox="0 0 16 16"
+                      version="1.1" width="16" aria-hidden="true">
+                      <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                      <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
+                    </svg></span>
+                  <p>Issues</p>
+                </div>
+                <h2 class="jump">Jump to</h2>
+              </a>
+              <a href="">
+                <div class="pages-icon">
+                  <span><svg height="16" class="octicon octicon-git-pull-request color-fg-muted" viewBox="0 0 16 16"
+                      version="1.1" width="16" aria-hidden="true">
+                      <path
+                        d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z">
+                      </path>
+                    </svg></span>
+                  <p>Pull requests</p>
+                </div>
+                <h2 class="jump">Jump to</h2>
+              </a>
+              <a href="">
+                <div class="pages-icon">
+                  <span><svg height="16" class="octicon octicon-comment-discussion color-fg-muted" viewBox="0 0 16 16"
+                      version="1.1" width="16" aria-hidden="true">
+                      <path
+                        d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z">
+                      </path>
+                    </svg></span>
+                  <p>Discussions</p>
+                </div>
+                <h2 class="jump">Jump to</h2>
+              </a>
+
+            </div>
+            <div class="command-plalette-line"></div>
+            <div class="pages-01343-list">
+              <h1>Repositories</h1>
+
+              <a href="">
+                <div class="pages-icon">
+                  <span><svg height="16" class="octicon octicon-repo color-fg-muted" viewBox="0 0 16 16" version="1.1"
+                      width="16" aria-hidden="true">
+                      <path
+                        d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                      </path>
+                    </svg></svg></span>
+                  <p>GitHub-Clone</p>
+                </div>
+                <h2 class="jump"><span class="jump-box-009">Enter</span> to <span class="jump-box-009">tab</span> to
+                  search to jump</h2>
+              </a>
+              <a href="">
+                <div class="pages-icon">
+                  <span><svg height="16" class="octicon octicon-repo color-fg-muted" viewBox="0 0 16 16" version="1.1"
+                      width="16" aria-hidden="true">
+                      <path
+                        d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                      </path>
+                    </svg></span>
+                  <p>GitHub-Clone</p>
+                </div>
+                <h2 class="jump"><span class="jump-box-009">Enter</span> to <span class="jump-box-009">tab</span> to
+                  search to jump</h2>
+              </a>
+              <a href="">
+                <div class="pages-icon">
+                  <span><svg height="16" class="octicon octicon-repo color-fg-muted" viewBox="0 0 16 16" version="1.1"
+                      width="16" aria-hidden="true">
+                      <path
+                        d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                      </path>
+                    </svg></span>
+                  <p>GitHub-Clone</p>
+                </div>
+                <h2 class="jump"><span class="jump-box-009">Enter</span> to <span class="jump-box-009">tab</span> to
+                  search to jump</h2>
+              </a>
+
+            </div>
+            <div class="command-plalette-line"></div>
+            <div class="pages-01343-list">
+              <h1>Users</h1>
+
+              <a href="">
+                <div class="pages-icon">
+                  <span><img src="115875004.png" alt="" class="pages-icon-img"></span>
+                  <p>@amanv3093</p>
+                </div>
+                <h2 class="jump"><span class="jump-box-009">Enter</span> to <span class="jump-box-009">tab</span> to
+                  search to jump</h2>
+              </a>
+              <a href="">
+                <div class="pages-icon">
+                  <span><img src="115875004.png" alt="" class="pages-icon-img"></span>
+                  <p>@amanv3093</p>
+                </div>
+                <h2 class="jump"><span class="jump-box-009">Enter</span> to <span class="jump-box-009">tab</span> to
+                  search to jump</h2>
+              </a>
+              <a href="">
+                <div class="pages-icon">
+                  <span><img src="115875004.png" alt="" class="pages-icon-img"></span>
+                  <p>@amanv3093</p>
+                </div>
+                <h2 class="jump"><span class="jump-box-009">Enter</span> to <span class="jump-box-009">tab</span> to
+                  search to jump</h2>
+              </a>
+
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+      </div>
+
+      <!-- End -->
+
+
+      <!-- Start -->
+      <div class="header-search ">
+        <div class="search-mobile-hidden">
+          <div class="search-mobile" onclick="searchlabel()">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+              class="octicon octicon-search">
+              <path
+                d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <div class="search-bar header-srch-border create-file0032">
+          <label for="" class="search-label create-file0032" onclick="searchlabel()">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+              class="octicon octicon-search create-file0032">
+              <path
+                d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z">
+              </path>
+            </svg>
+            <span class="slash-text create-file0032">Type <span class="slash create-file0032">/</span> to Search</span>
+          </label>
+
+          <button class="srch-btn-1 create-file0032 create-file0032 toolkit-hov" onclick="commandpalet()">
+            <span class="slash-1 create-file0032"></span>
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+              class="octicon octicon-command-palette oc-1 create-file0032 ">
+              <path
+                d="m6.354 8.04-4.773 4.773a.75.75 0 1 0 1.061 1.06L7.945 8.57a.75.75 0 0 0 0-1.06L2.642 2.206a.75.75 0 0 0-1.06 1.061L6.353 8.04ZM8.75 11.5a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5h-5.5Z">
+              </path>
+
+              <path
+                d="m6.354 8.04-4.773 4.773a.75.75 0 1 0 1.061 1.06L7.945 8.57a.75.75 0 0 0 0-1.06L2.642 2.206a.75.75 0 0 0-1.06 1.061L6.353 8.04ZM8.75 11.5a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5h-5.5Z">
+              </path>
+            </svg>
+            <div class="tookit commandpalet-toolkit">
+              <i class="fa-solid fa-caret-up command-toolkit-icon"></i>
+              Command palette
+            </div>
+          </button>
+
+
+
+          <!-- End -->
+
+        </div>
+
+        <div class="searchbar-line header-srch-border"></div>
+
+        <!-- create-new -->
+        <div class="create-file header-srch-border create-file0032 toolkit-hov" onclick="addfile()" id="create-file-2">
+          <div class="header-button-common create-file-btn create-file0032 ">
+            <div class="plus create-file0032">
+              <span class="create-file-span-1 create-file0032">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-plus create-file0032">
+                  <path
+                    d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z">
+                  </path>
+                  <path
+                    d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z">
+                  </path>
+                </svg></span>
+              <span class="create-file-span-1 create-file0032">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-triangle-down create-file0032">
+                  <path
+                    d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z">
+                  </path>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div class="tookit create-toolkit">
+            <i class="fa-solid fa-caret-up create-toolkit-icon"></i>
+            create new..
+          </div>
+
+        </div>
+        <div class="header-srch-border-hidden create-file0032" id="addfile-hidden">
+          <ul>
+            <li class="list00" style="cursor: pointer;">
+              <a href="">
+                <span class="add-spanlogo-2"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                    width="16" data-view-component="true" class="octicon octicon-repo">
+                    <path
+                      d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                    </path>
+                  </svg></span>
+                <span class="add-spantext-2">New repository</span>
+              </a>
+            </li>
+            <li class="list00">
+              <a href="">
+                <span class="add-spanlogo-2"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                    width="16" data-view-component="true" class="octicon octicon-repo-push">
+                    <path
+                      d="M1 2.5A2.5 2.5 0 0 1 3.5 0h8.75a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0V1.5h-8a1 1 0 0 0-1 1v6.708A2.493 2.493 0 0 1 3.5 9h3.25a.75.75 0 0 1 0 1.5H3.5a1 1 0 0 0 0 2h5.75a.75.75 0 0 1 0 1.5H3.5A2.5 2.5 0 0 1 1 11.5Zm13.23 7.79h-.001l-1.224-1.224v6.184a.75.75 0 0 1-1.5 0V9.066L10.28 10.29a.75.75 0 0 1-1.06-1.061l2.505-2.504a.75.75 0 0 1 1.06 0L15.29 9.23a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018Z">
+                    </path>
+                  </svg></span>
+                <span class="add-spantext-2">Import repository</span>
+              </a>
+            </li>
+            <li class="line-break-addfile"></li>
+            <li>
+              <a href="">
+                <span class="add-spanlogo-2"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                    width="16" data-view-component="true" class="octicon octicon-codespaces">
+                    <path
+                      d="M0 11.25c0-.966.784-1.75 1.75-1.75h12.5c.966 0 1.75.784 1.75 1.75v3A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm2-9.5C2 .784 2.784 0 3.75 0h8.5C13.216 0 14 .784 14 1.75v5a1.75 1.75 0 0 1-1.75 1.75h-8.5A1.75 1.75 0 0 1 2 6.75Zm1.75-.25a.25.25 0 0 0-.25.25v5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5a.25.25 0 0 0-.25-.25Zm-2 9.5a.25.25 0 0 0-.25.25v3c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-3a.25.25 0 0 0-.25-.25Z">
+                    </path>
+                    <path
+                      d="M7 12.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm-4 0a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Z">
+                    </path>
+                  </svg></span>
+                <span class="add-spantext-2">New codespace</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="add-spanlogo-2"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                    width="16" data-view-component="true" class="octicon octicon-code">
+                    <path
+                      d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z">
+                    </path>
+                  </svg></span>
+                <span class="add-spantext-2">New gist</span>
+              </a>
+            </li>
+            <li class="line-break-addfile"></li>
+            <li>
+              <a href="">
+                <span class="add-spanlogo-2"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                    width="16" data-view-component="true" class="octicon octicon-organization">
+                    <path
+                      d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z">
+                    </path>
+                  </svg></span>
+                <span class="add-spantext-2">New organization</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="add-spanlogo-2"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                    width="16" data-view-component="true" class="octicon octicon-table">
+                    <path
+                      d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z">
+                    </path>
+                  </svg></span>
+                <span class="add-spantext-2">New projects</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+
+
+
+        <!-- issus -->
+        <a class="toolkit-hov" href="./Issues page/index.html">
+          <div class="search-issues header-srch-border">
+
+            <div class="header-button-common">
+              <!-- <a href="./Issues page/index.html" class="plus"> -->
+              <svg aria-hidden="true" height="16" version="1.1" width="16" data-view-component="true"
+                class="octicon octicon-issue-opened Button-visual">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
               </svg>
-                <input class="search-0012-input create-file0032" type="text" name="" id="">
-              </div>
-              <div class="search-0012-list create-file0032">
-                <div class="search-0012-owner create-file0032">
-                  <h1 >Owners</h1>
-                  <a class="owner-list create-file0032" href="">
-                    <div class="owner-list-repo create-file0032">
-                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo create-file0032">
-                        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                    </svg>
-                    <p>amanv3093</p>
-                    </div>
-                    <p class="owner-list-ptag create-file0032">Jump to</p>
-                  </a>
-                 
-                    <a class="owner-list create-file0032" href="">
-                    <div class="owner-list-repo create-file0032">
-                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo create-file0032">
-                        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                    </svg>
-                    <p>amanv3093</p>
-                    </div>
-                    <p class="owner-list-ptag create-file0032">Jump to</p>
-                  </a>
-  
-                 
-                  <a class="owner-list create-file0032" href="">
-                    <div class="owner-list-repo create-file0032">
-                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo create-file0032">
-                        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                    </svg>
-                    <p>amanv3093</p>
-                    </div>
-                    <p class="owner-list-ptag create-file0032">Jump to</p>
-                  </a>
-  
-                </div>
-                <div class=" search-0012-owner search-0012-repo create-file0032">
-                  <h1 >Repositories</h1>
-                  <a class="owner-list create-file0032" href="">
-                    <div class="owner-list-repo">
-                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo create-file0032">
-                        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                    </svg>
-                    <p>GitHub-Project-1</p>
-                    </div>
-                    <p class="owner-list-ptag create-file0032">Jump to</p>
-                  </a>
-                  <a class="owner-list create-file0032" href="">
-                    <div class="owner-list-repo create-file0032">
-                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo create-file0032">
-                        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                    </svg>
-                    <p>GitHub-Project-1</p>
-                    </div>
-                    <p class="owner-list-ptag create-file0032">Jump to</p>
-                  </a>
-                  <a class="owner-list create-file0032" href="">
-                    <div class="owner-list-repo create-file0032">
-                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo create-file0032">
-                        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                    </svg>
-                    <p>GitHub-Project-1</p>
-                    </div>
-                    <p class="owner-list-ptag create-file0032">Jump to</p>
-                  </a>
-                  <a class="owner-list create-file0032" href="">
-                    <div class="owner-list-repo create-file0032">
-                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo create-file0032">
-                        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                    </svg>
-                    <p>GitHub-Project-1</p>
-                    </div>
-                    <p class="owner-list-ptag create-file0032">Jump to</p>
-                  </a>
-                  <a class="owner-list create-file0032" href="">
-                    <div class="owner-list-repo create-file0032">
-                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo create-file0032">
-                        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                    </svg>
-                    <p>GitHub-Project-1</p>
-                    </div>
-                    <p class="owner-list-ptag create-file0032">Jump to</p>
-                  </a>
-                  <a class="owner-list create-file0032" href="">
-                    <div class="owner-list-repo create-file0032">
-                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo create-file0032">
-                        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                    </svg>
-                    <p>GitHub-Project-1</p>
-                    </div>
-                    <p class="owner-list-ptag create-file0032">Jump to</p>
-                  </a>
-                  <a class="owner-list create-file0032" href="">
-                    <div class="owner-list-repo create-file0032">
-                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo create-file0032">
-                        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                    </svg>
-                    <p>GitHub-Project-1</p>
-                    </div>
-                    <p class="owner-list-ptag create-file0032">Jump to</p>
-                  </a>
-                  <a class="owner-list create-file0032" href="">
-                    <div class="owner-list-repo create-file0032">
-                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo create-file0032">
-                        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                    </svg>
-                    <p>GitHub-Project-1</p>
-                    </div>
-                    <p class="owner-list-ptag create-file0032">Jump to</p>
-                  </a>
-                  <a class="owner-list create-file0032" href="">
-                    <div class="owner-list-repo create-file0032">
-                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo create-file0032">
-                        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                    </svg>
-                    <p>GitHub-Project-1</p>
-                    </div>
-                    <p class="owner-list-ptag">Jump to</p>
-                  </a>
-                </div>
-  
-              </div>
-              <div class="search-0012-footer">
-                <a href="">Search syntax tips</a>
-                <a href="">Give feedback</a>
-  
-  
-              </div>
-             
+              <!-- </a> -->
             </div>
-  
-            <div class="command-plalette-0030 " id="command-plalette-003" >
-              <div class="command-plalette-search">
-                <div class="command-plalette-input">
-                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search color-fg-muted">
-                    <path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path>
-                </svg>
-                  <input type="text" name="" id="command-plalette-input0" placeholder="Search or jump to...">
-  
-                </div>
-                <div class="command-plalette-cross" onclick="erase()">
-                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x-circle-fill">
-                    <path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z"></path>
-                </svg>
-  
-                </div>
-               
-              </div>
-              <div class="command-plalette-line"></div>
-              <div class="pages-01343">
-                <div class="pages-01343-top">
-                  <h1><span class="pages-box-txt">Tip:</span> Type <span class="pages-box-sp">#</span> to search pull requests</h1>
-                  <h1>Type <span class="pages-box-sp">?</span> for help and tips</h1>
-  
-                </div>
-                <div class="pages-01343-list-main">
-                <div class="pages-01343-list">
-                  <h1>Pages</h1>
-                  <a href="">
-                    <div class="pages-icon">
-                      <span><svg height="16" class="octicon octicon-home color-fg-muted" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z"></path></svg></span>
-                      <p>Dashboard</p>
-                    </div>
-                    <h2 class="jump">Jump to</h2>
-                  </a>
-                  <a href="">
-                    <div class="pages-icon">
-                      <span><svg height="16" class="octicon octicon-bell color-fg-muted" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path d="M8 16a2 2 0 0 0 1.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 0 0 8 16ZM3 5a5 5 0 0 1 10 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.519 1.519 0 0 1 13.482 13H2.518a1.516 1.516 0 0 1-1.263-2.36l1.703-2.554A.255.255 0 0 0 3 7.947Zm5-3.5A3.5 3.5 0 0 0 4.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.017.017 0 0 0-.003.01l.001.006c0 .002.002.004.004.006l.006.004.007.001h10.964l.007-.001.006-.004.004-.006.001-.007a.017.017 0 0 0-.003-.01l-1.703-2.554a1.745 1.745 0 0 1-.294-.97V5A3.5 3.5 0 0 0 8 1.5Z"></path></svg></span>
-                      <p>Notifications</p>
-                    </div>
-                    <h2 class="jump">Jump to</h2>
-                  </a>
-                  <a href="">
-                    <div class="pages-icon">
-                      <span><svg height="16" class="octicon octicon-issue-opened color-fg-muted" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path></svg></span>
-                      <p>Issues</p>
-                    </div>
-                    <h2 class="jump">Jump to</h2>
-                  </a>
-                  <a href="">
-                    <div class="pages-icon">
-                      <span><svg height="16" class="octicon octicon-git-pull-request color-fg-muted" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"></path></svg></span>
-                      <p>Pull requests</p>
-                    </div>
-                    <h2 class="jump">Jump to</h2>
-                  </a>
-                  <a href="">
-                    <div class="pages-icon">
-                      <span><svg height="16" class="octicon octicon-comment-discussion color-fg-muted" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"></path></svg></span>
-                      <p>Discussions</p>
-                    </div>
-                    <h2 class="jump">Jump to</h2>
-                  </a>
-  
-                </div>
-                <div class="command-plalette-line"></div>
-                <div class="pages-01343-list">
-                  <h1>Repositories</h1>
-                 
-                  <a href="">
-                    <div class="pages-icon">
-                      <span><svg height="16" class="octicon octicon-repo color-fg-muted" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg></svg></span>
-                      <p>GitHub-Clone</p>
-                    </div>
-                    <h2 class="jump"><span class="jump-box-009">Enter</span> to <span class="jump-box-009">tab</span> to search to jump</h2>
-                  </a>
-                  <a href="">
-                    <div class="pages-icon">
-                      <span><svg height="16" class="octicon octicon-repo color-fg-muted" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg></span>
-                      <p>GitHub-Clone</p>
-                    </div>
-                    <h2 class="jump"><span class="jump-box-009">Enter</span> to <span class="jump-box-009">tab</span> to search to jump</h2>
-                  </a>
-                  <a href="">
-                    <div class="pages-icon">
-                      <span><svg height="16" class="octicon octicon-repo color-fg-muted" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg></span>
-                      <p>GitHub-Clone</p>
-                    </div>
-                    <h2 class="jump"><span class="jump-box-009">Enter</span> to <span class="jump-box-009">tab</span> to search to jump</h2>
-                  </a>
-  
-                </div>
-                <div class="command-plalette-line"></div>
-                <div class="pages-01343-list">
-                  <h1>Users</h1>
-                 
-                  <a href="">
-                    <div class="pages-icon">
-                      <span><img src="115875004.png" alt="" class="pages-icon-img"></span>
-                      <p>@amanv3093</p>
-                    </div>
-                    <h2 class="jump"><span class="jump-box-009">Enter</span> to <span class="jump-box-009">tab</span> to search to jump</h2>
-                  </a>
-                  <a href="">
-                    <div class="pages-icon">
-                      <span><img src="115875004.png" alt="" class="pages-icon-img"></span>
-                      <p>@amanv3093</p>
-                    </div>
-                    <h2 class="jump"><span class="jump-box-009">Enter</span> to <span class="jump-box-009">tab</span> to search to jump</h2>
-                  </a>
-                  <a href="">
-                    <div class="pages-icon">
-                      <span><img src="115875004.png" alt="" class="pages-icon-img"></span>
-                      <p>@amanv3093</p>
-                    </div>
-                    <h2 class="jump"><span class="jump-box-009">Enter</span> to <span class="jump-box-009">tab</span> to search to jump</h2>
-                  </a>
-               
-  
-                </div>
-              </div>
-              
-                
-                
-  
-              </div>
-  
-  
+            <div class="tookit issue-toolkit">
+              <i class="fa-solid fa-caret-up issues-toolkit-icon"></i>
+              Issues
             </div>
-  
-            <!-- End -->
-  
-  
-            <!-- Start -->
-          <div class="header-search ">
-    <div class="search-mobile-hidden" >
-             <div class="search-mobile"  onclick="searchlabel()">
-              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search">
-                <path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path>
-            </svg>
-             </div>
-            </div>
-            <div class="search-bar header-srch-border create-file0032">
-              <label for="" class="search-label create-file0032" onclick="searchlabel()">
-                <svg
-                  aria-hidden="true"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  version="1.1"
-                  width="16"
-                  data-view-component="true"
-                  class="octicon octicon-search create-file0032"
-                >
-                  <path
-                    d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"
-                  ></path>
-                </svg>
-                <span class="slash-text create-file0032"
-                  >Type <span class="slash create-file0032">/</span> to Search</span
-                >
-              </label>
-  
-              <button class="srch-btn-1 create-file0032 create-file0032 toolkit-hov" onclick="commandpalet()">
-                <span class="slash-1 create-file0032"></span>
-                <svg
-                  aria-hidden="true"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  version="1.1"
-                  width="16"
-                  data-view-component="true"
-                  class="octicon octicon-command-palette oc-1 create-file0032 "
-                >
-                  <path
-                    d="m6.354 8.04-4.773 4.773a.75.75 0 1 0 1.061 1.06L7.945 8.57a.75.75 0 0 0 0-1.06L2.642 2.206a.75.75 0 0 0-1.06 1.061L6.353 8.04ZM8.75 11.5a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5h-5.5Z"
-                  ></path>
-  
-                  <path
-                    d="m6.354 8.04-4.773 4.773a.75.75 0 1 0 1.061 1.06L7.945 8.57a.75.75 0 0 0 0-1.06L2.642 2.206a.75.75 0 0 0-1.06 1.061L6.353 8.04ZM8.75 11.5a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5h-5.5Z"
-                  ></path>
-                </svg>
-                <div class="tookit commandpalet-toolkit">
-                  <i class="fa-solid fa-caret-up command-toolkit-icon"></i>
-                 Command palette
-              </div>
-              </button>
-  
-              
-  
-              <!-- End -->
-  
-            </div>
-          
-            <div class="searchbar-line header-srch-border"></div>
-  
-            <!-- create-new -->
-            <div class="create-file header-srch-border create-file0032 toolkit-hov" onclick="addfile()" id="create-file-2">
-              <div class="header-button-common create-file-btn create-file0032 ">
-                <div class="plus create-file0032">
-                  <span class="create-file-span-1 create-file0032">
-                    <svg
-                      aria-hidden="true"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      version="1.1"
-                      width="16"
-                      data-view-component="true"
-                      class="octicon octicon-plus create-file0032"
-                    >
-                      <path
-                        d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"
-                      ></path>
-                      <path
-                        d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"
-                      ></path></svg></span>
-                  <span class="create-file-span-1 create-file0032">
-                    <svg
-                      aria-hidden="true"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      version="1.1"
-                      width="16"
-                      data-view-component="true"
-                      class="octicon octicon-triangle-down create-file0032"
-                    >
-                      <path
-                        d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"
-                      ></path>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-              
-              <div class="tookit create-toolkit">
-                <i class="fa-solid fa-caret-up create-toolkit-icon"></i>
-                create new..
-            </div>
-            
-            </div>
-            <div class="header-srch-border-hidden create-file0032" id="addfile-hidden" >
-              <ul>
-                <li class="list00" style="cursor: pointer;">
-                  <a href="">
-                    <span class="add-spanlogo-2"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo">
-                      <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-                  </svg></span>
-                    <span class="add-spantext-2">New repository</span>
-                  </a>
-                </li>
-                <li class="list00">
-                  <a href="">
-                    <span class="add-spanlogo-2"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-push">
-                      <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h8.75a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0V1.5h-8a1 1 0 0 0-1 1v6.708A2.493 2.493 0 0 1 3.5 9h3.25a.75.75 0 0 1 0 1.5H3.5a1 1 0 0 0 0 2h5.75a.75.75 0 0 1 0 1.5H3.5A2.5 2.5 0 0 1 1 11.5Zm13.23 7.79h-.001l-1.224-1.224v6.184a.75.75 0 0 1-1.5 0V9.066L10.28 10.29a.75.75 0 0 1-1.06-1.061l2.505-2.504a.75.75 0 0 1 1.06 0L15.29 9.23a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018Z"></path>
-                  </svg></span>
-                    <span class="add-spantext-2">Import repository</span>
-                  </a>
-                </li>
-                <li class="line-break-addfile"></li>
-                <li>
-                  <a href="">
-                    <span class="add-spanlogo-2"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-codespaces">
-                      <path d="M0 11.25c0-.966.784-1.75 1.75-1.75h12.5c.966 0 1.75.784 1.75 1.75v3A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm2-9.5C2 .784 2.784 0 3.75 0h8.5C13.216 0 14 .784 14 1.75v5a1.75 1.75 0 0 1-1.75 1.75h-8.5A1.75 1.75 0 0 1 2 6.75Zm1.75-.25a.25.25 0 0 0-.25.25v5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5a.25.25 0 0 0-.25-.25Zm-2 9.5a.25.25 0 0 0-.25.25v3c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-3a.25.25 0 0 0-.25-.25Z"></path><path d="M7 12.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm-4 0a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Z"></path>
-                  </svg></span>
-                    <span class="add-spantext-2">New codespace</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span class="add-spanlogo-2"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
-                      <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
-                  </svg></span>
-                    <span class="add-spantext-2">New gist</span>
-                  </a>
-                </li>
-                <li class="line-break-addfile"></li>
-                <li>
-                  <a href="">
-                    <span class="add-spanlogo-2"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-organization">
-                      <path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path>
-                  </svg></span>
-                    <span class="add-spantext-2">New organization</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span class="add-spanlogo-2"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-table">
-                      <path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z"></path>
-                  </svg></span>
-                    <span class="add-spantext-2">New projects</span>
-                  </a>
-                </li>
-              </ul>
-  
-            </div>
-            
-           
-  
-          
-           <!-- issus -->
-           <a class="toolkit-hov" href="./Issues page/index.html">
-            <div class="search-issues header-srch-border">
-             
-              <div class="header-button-common">
-                <!-- <a href="./Issues page/index.html" class="plus"> -->
-                  <svg
-                    aria-hidden="true"
-                    height="16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="octicon octicon-issue-opened Button-visual"
-                  >
-                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
-                    <path
-                      d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"
-                    ></path>
-                  </svg>
-                <!-- </a> -->
-              </div>
-              <div class="tookit issue-toolkit">
-                <i class="fa-solid fa-caret-up issues-toolkit-icon"></i>
-              Issues</div>
-            </div>
-            
-          </a>
-          
-  
-             <!-- pull-request -->
-             <a class="toolkit-hov" href="./Pull requests/index.html">
-           <div class="pull-request header-srch-border">
-              <div class="header-button-common">
-                <!-- <a href="" class="plus"> -->
-                  <svg
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="octicon octicon-git-pull-request Button-visual"
-                  >
-                    <path
-                      d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
-                    ></path>
-                  </svg>
-                <!-- </a> -->
-              </div>
-              <div class="tookit pull-toolkit">
-                <i class="fa-solid fa-caret-up pull-toolkit-icon"></i>
-                Pull requests</div>
-            
-            </div>
-          </a>
-  
-            <!-- notification -->
-            <a class="toolkit-hov" href="./Issues page/index.html">
-            <div class="notification header-srch-border">
-              <div class="header-button-common">
-                <!-- <a href="" class="plus"> -->
-                  <svg
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="octicon octicon-inbox Button-visual"
-                  >
-                    <path
-                      d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z"
-                    ></path>
-                  </svg>
-                <!-- </a> -->
-              </div>
-              <div class="tookit notification-toolkit">
-                <i class="fa-solid fa-caret-up notification-toolkit-icon"></i>
-                You have no unread notifications</div>
-             
-            </div>
-            
-          </a>
-  
-            <!-- profile -->
-           
-            <div class="profile header-srch-border" onclick="menuopen2()">
-              <div class="profile-logo"></div>
-            </div>
-  
           </div>
-           <!-- End -->
-          <!-- start -->
-          <div class="set-status-hidden" id="set-status-hidden">
-            <div class="set-status-hidden-box-1">
-              <h1>Edit status</h1>
-             <div class="cross-899-head"  id="cross-8999-head" onclick="cross899()" >
-              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x cross-899">
-                <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
+
+        </a>
+
+
+        <!-- pull-request -->
+        <a class="toolkit-hov" href="./Pull requests/index.html">
+          <div class="pull-request header-srch-border">
+            <div class="header-button-common">
+              <!-- <a href="" class="plus"> -->
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                data-view-component="true" class="octicon octicon-git-pull-request Button-visual">
+                <path
+                  d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z">
+                </path>
+              </svg>
+              <!-- </a> -->
+            </div>
+            <div class="tookit pull-toolkit">
+              <i class="fa-solid fa-caret-up pull-toolkit-icon"></i>
+              Pull requests
+            </div>
+
+          </div>
+        </a>
+
+        <!-- notification -->
+        <a class="toolkit-hov" href="./Issues page/index.html">
+          <div class="notification header-srch-border">
+            <div class="header-button-common">
+              <!-- <a href="" class="plus"> -->
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                data-view-component="true" class="octicon octicon-inbox Button-visual">
+                <path
+                  d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z">
+                </path>
+              </svg>
+              <!-- </a> -->
+            </div>
+            <div class="tookit notification-toolkit">
+              <i class="fa-solid fa-caret-up notification-toolkit-icon"></i>
+              You have no unread notifications
+            </div>
+
+          </div>
+
+        </a>
+
+        <!-- profile -->
+
+        <div class="profile header-srch-border" onclick="menuopen2()">
+          <div class="profile-logo"></div>
+        </div>
+
+      </div>
+      <!-- End -->
+      <!-- start -->
+      <div class="set-status-hidden" id="set-status-hidden">
+        <div class="set-status-hidden-box-1">
+          <h1>Edit status</h1>
+          <div class="cross-899-head" id="cross-8999-head" onclick="cross899()">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+              class="octicon octicon-x cross-899">
+              <path
+                d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z">
+              </path>
             </svg>
           </div>
-       </div>
-       <div class="set-status-scroll">
+        </div>
+        <div class="set-status-scroll">
           <div class="set-status-input-main">
             <div class="set-status-input">
-             <div class="set-status-sec-1">
-              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-smiley">
-                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm3.82 1.636a.75.75 0 0 1 1.038.175l.007.009c.103.118.22.222.35.31.264.178.683.37 1.285.37.602 0 1.02-.192 1.285-.371.13-.088.247-.192.35-.31l.007-.008a.75.75 0 0 1 1.222.87l-.022-.015c.02.013.021.015.021.015v.001l-.001.002-.002.003-.005.007-.014.019a2.066 2.066 0 0 1-.184.213c-.16.166-.338.316-.53.445-.63.418-1.37.638-2.127.629-.946 0-1.652-.308-2.126-.63a3.331 3.331 0 0 1-.715-.657l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 0 1 .183-1.044ZM12 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM5 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm5.25 2.25.592.416a97.71 97.71 0 0 0-.592-.416Z"></path>
-            </svg>
-             </div>
-             <div class="set-status-sec-2">
-               <input type="text" placeholder="What's your current status?" class="input-99">
-             </div>
+              <div class="set-status-sec-1">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="octicon octicon-smiley">
+                  <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm3.82 1.636a.75.75 0 0 1 1.038.175l.007.009c.103.118.22.222.35.31.264.178.683.37 1.285.37.602 0 1.02-.192 1.285-.371.13-.088.247-.192.35-.31l.007-.008a.75.75 0 0 1 1.222.87l-.022-.015c.02.013.021.015.021.015v.001l-.001.002-.002.003-.005.007-.014.019a2.066 2.066 0 0 1-.184.213c-.16.166-.338.316-.53.445-.63.418-1.37.638-2.127.629-.946 0-1.652-.308-2.126-.63a3.331 3.331 0 0 1-.715-.657l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 0 1 .183-1.044ZM12 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM5 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm5.25 2.25.592.416a97.71 97.71 0 0 0-.592-.416Z">
+                  </path>
+                </svg>
+              </div>
+              <div class="set-status-sec-2">
+                <input type="text" placeholder="What's your current status?" class="input-99">
+              </div>
             </div>
-  
+
             <div class="busy-radio">
               <input type="checkbox" name="" id="">
-           
-            <div class="busy-radio-txt"> 
-              <h1>Busy</h1>
-              <p>When others mention you, assign you, or request your review, GitHub will let them know that you have limited availability.</p>
+
+              <div class="busy-radio-txt">
+                <h1>Busy</h1>
+                <p>When others mention you, assign you, or request your review, GitHub will let them know that you have
+                  limited availability.</p>
+              </div>
+            </div>
+            <div class="clear-status">
+              <h1>Clear status</h1>
+              <select name="" id="select-status">
+                <option value="">Never</option>
+                <option value="">in 30 min</option>
+                <option value="">in 1 hour</option>
+                <option value="">in 4 hour</option>
+                <option value="">today</option>
+                <option value="">this week</option>
+
+              </select>
+              <p>Keep this status until you clear or edit your status.</p>
+
+            </div>
+            <div class="set-status-btn-009-main">
+              <div class="set-status-btn-009">
+
+                <button class="status-btn-01">Set status</button>
+                <button class="status-btn-02">Clear status</button>
+
+              </div>
+            </div>
+            <!-- <div class="set-status-line"></div> -->
+          </div>
+        </div>
+
+      </div>
+      <!-- End -->
+    </div>
+  </header>
+
+  <section id="section-1">
+    <div class="section-box">
+      <div class="section-box-head">
+        <h1>Create a new repository</h1>
+        <p>A repository contains all project files, including the revision history. Already have a project repository
+          elsewhere?</p>
+        <span class="import-anchor">
+          <a href="">Import a repository</a>
+        </span>
+      </div>
+      <div class="required-section">
+        <h2>Required fields are marked with an asterisk (*).</h2>
+        <div class="owner090-head">
+          <div class="owner090">
+            <h1>Owner *</h1>
+            <div class="owner-input">
+              <img src="115875004.png" alt="">
+              <p>user3093</p>
+              <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-triangle-down" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg>
+
+            </div>
+
+          </div>
+          <span class="owner-slash">/</span>
+
+          <div class="repo-name">
+            <h1>Repository name *</h1>
+            <div class="repo-input">
+              <input type="text" name="" id="repo-input0">
             </div>
           </div>
-          <div class="clear-status">
-            <h1>Clear status</h1>
-            <select name="" id="select-status">
-              <option value="">Never</option>
-              <option value="">in 30 min</option>
-              <option value="">in 1 hour</option>
-              <option value="">in 4 hour</option>
-              <option value="">today</option>
-              <option value="">this week</option>
-  
-            </select>
-            <p>Keep this status until you clear or edit your status.</p>
-  
-          </div>
-          <div class="set-status-btn-009-main">
-          <div class="set-status-btn-009">
-  
-            <button class="status-btn-01">Set status</button>
-            <button class="status-btn-02">Clear status</button>
-  
-          </div>
+         
+
         </div>
-          <!-- <div class="set-status-line"></div> -->
+        <div class="Description">
+        <p>Great repository names are short and memorable. Need inspiration? How about 
+         <a href="">crispy-octo-doodle</a> ?</p>
+         <div class="Description-input">
+          <p>Description <span>(optional)</span></p>
+          <input type="text" name="" id="des-input">
+
          </div>
         </div>
-         
-        </div>
-         <!-- End -->
+
       </div>
-      </header>
-
-
-      <script src="script.js"></script>
-    <script>
-      var loader = document.getElementById("loader");
-      window.addEventListener("load", function () {
-        loader.style.display = "none";
-      });
-    </script>
-    <script>
-      //  let over= document.getElementsByClassName("section-box-1");
-      
-       let over=document.querySelector(".section-box-1");
-       over.style.overflowY = "auto";
-        function  showmore(){
-          var showmore = document.getElementById("show-more-2");
-          var showp = document.getElementById("show-p");
-          
-  
-          
-          if (showmore.style.display === "block") {
-            showmore.style.display = "none";
-            showp.style.display = "block";
-            
-            
-          } else {
-            showmore.style.display = "block";
-            showp.style.display = "none";
-           
-           
-          }
-          
-        }
-        
+      <div class="public-radio">
+        <div class="public-option">
+          <input type="radio" name="pubpvt" id="radio0">
+          <div class="public-icon">
+          <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-repo oction-repo090" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg></div>
+          <div class="label-sec">
+          <label for="radio0">Public</label>
+          <p>Anyone on the internet can see this repository. You choose who can commit.</p>
+        </div>
        
-  
-      
+        </div>
+     
+        <div class="public-option">
+          <input type="radio" name="pubpvt" id="radio1">
+          <div class="public-icon">
+            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-lock oction-repo090" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M4 4a4 4 0 0 1 8 0v2h.25c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25v-5.5C2 6.784 2.784 6 3.75 6H4Zm8.25 3.5h-8.5a.25.25 0 0 0-.25.25v5.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25ZM10.5 6V4a2.5 2.5 0 1 0-5 0v2Z"></path></svg></div>
+          <div class="label-sec">
+          <label for="radio1">Private</label>
+          <p>Anyone on the internet can see this repository. You choose who can commit.</p>
+        </div>
+       
+        </div>
+
+      </div>
+
+      <div class="initialize-repo">
+        <h1>Initialize this repository with:</h1>
+        <div class="initialize-repo-sec1">
+          <input type="checkbox" id="checbx-1">
+          <div class="initialize-check-box">
+            <label for="">Add a README file</label>
+            <p>This is where you can write a long description for your project.<a href="">Learn more about READMEs.</a></p>
+          </div>
+
+        </div>
+        <div class="add-git">
+          <h2>Add .gitignore</h2>
+          <button class="gitignore-border">
+          <p>.gitignore template:<span>None</span></p>
+         <div class="gitignore-icon"><svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-triangle-down" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></div>
+        </button>
+        <p>Choose which files not to track from a list of templates.<a href=""> Learn more about ignoring files.</a></p>
+        </div>
+        <div class="add-git">
+          <h2>Choose a license</h2>
+          <button class="gitignore-border">
+          <p>License:<span>None</span></p>
+         <div class="gitignore-icon"><svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-triangle-down" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></div>
+        </button>
+        <p>A license tells others what they can and can't do with your code.<a href=""> Learn more about licenses.</a></p>
+        </div>
         
-        let s1 = document.getElementById("srch-3-hidden2");
-        function innersrch(){
-        if (s1.style.display === "block") {
-            s1.style.display = "none";
-          } else {
-           s1.style.display = "block";
-          }
-        }
         
-        
-        let text333=document.querySelector("#text-333");
-        let text33=document.querySelector("#command-plalette-input0");
-        function erase(){
-          text333.value=' ';
-          text33.value=' ';
-        }
-      
-      </script>
-  
+
+      </div>
+      <div class="warn09">
+        <span><svg aria-hidden="true" focusable="false" role="img" class="Octicon-sc-9kayk9-0 frGLnK" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg></span>
+<p>You are creating a private repository in your personal account.</p>
+      </div>
+      <div class="btn990">
+      <button class="repo-btn0909">Create repository</button>
+    </div>
+
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="copy-right">
+      <div class="copy-right-txt">
+     <a href="">
+      <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github">
+        <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+    </svg>
+    
+     </a>
+     <span>© 2023 GitHub, Inc.</span>
+    </div>
+     <ul>
+      <li><a href="">Terms</a></li>
+      <li><a href="">Privacy</a></li>
+      <li><a href="">Security</a></li>
+      <li><a href="">Status</a></li>
+      <li><a href="">Docs</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Manage cookies</a></li>
+      <li><a href="">Do not share my personal information</a></li>
+     </ul>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+  <script>
+    var loader = document.getElementById("loader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    });
+  </script>
+  <script>
+    //  let over= document.getElementsByClassName("section-box-1");
+
+    let over = document.querySelector(".section-box-1");
+    over.style.overflowY = "auto";
+    function showmore() {
+      var showmore = document.getElementById("show-more-2");
+      var showp = document.getElementById("show-p");
+
+
+
+      if (showmore.style.display === "block") {
+        showmore.style.display = "none";
+        showp.style.display = "block";
+
+
+      } else {
+        showmore.style.display = "block";
+        showp.style.display = "none";
+
+
+      }
+
+    }
+
+
+
+
+
+    let s1 = document.getElementById("srch-3-hidden2");
+    function innersrch() {
+      if (s1.style.display === "block") {
+        s1.style.display = "none";
+      } else {
+        s1.style.display = "block";
+      }
+    }
+
+
+    let text333 = document.querySelector("#text-333");
+    let text33 = document.querySelector("#command-plalette-input0");
+    function erase() {
+      text333.value = ' ';
+      text33.value = ' ';
+    }
+
+  </script>
+
 </body>
+
 </html>
