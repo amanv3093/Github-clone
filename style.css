@@ -2019,9 +2019,9 @@ display: flex;
 align-items: center;
     gap: 8px;
 }
-.box0091-input0009>h3{
+.box0091-input0009>label{
     font-size: 12px;
-    font-size: 500;
+    font-weight: 700;
     color: var(--color-fg-default);
 }
 .box0091-heading0899{
