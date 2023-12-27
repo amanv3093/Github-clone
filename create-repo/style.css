@@ -2154,9 +2154,7 @@ footer ul li{
     padding-top: 1rem;
 }
 }
-html{
-    border: 1px solid black;
-}
+
 
 @media screen and (min-width:321px) and (max-width:425px){
     .set-status-hidden{
@@ -2227,6 +2225,64 @@ html{
         width: 100% !important;
         height: 47vh !important;
     }
+    #section-1{
+        width: 90% !important;
+        margin: auto;
+    }
+    .section-box{
+    width: 100% !important;
+    padding-top: 2rem !important;
+    }
+    .section-box-head>p{
+        line-height: 18px;
+    }
+    .owner090-head{
+        display: block !important;
+    }
+    .owner-input{
+        width: 52%;
+    }
+    .owner-slash{
+    display: none;
+    }
+    .repo-name{
+        padding-top: 1rem;
+    }
+    .Description>p{
+        line-height: 18px;
+    }
+    .label-sec>p {
+        line-height: 16px;   
+    }
+    .add-git>p{
+        line-height: 16px;   
+    }
+    .warn09{
+    align-items: flex-start;
+    }
+    .warn09>p{
+        line-height: 18px;
+    }
+    footer{
+        width: 90vw ;
+        margin: auto;
+        padding-bottom: 4rem !important;
+    }
+    .copy-right{
+        flex-direction: column-reverse;
+    }
+    footer ul{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    footer ul li{
+        padding-top: 3px;
+    }
+    .copy-right-txt{
+        padding-top: 1rem;
+    }
 }
 
 
@@ -2286,6 +2342,54 @@ display: block !important;
 /* headder end */
 .section-box-2-right{
 display: none;
+}
+
+#section-1{
+    width: 90% !important;
+    margin: auto;
+}
+.section-box{
+width: 100% !important;
+padding-top: 2rem !important;
+}
+.section-box-head>p{
+    line-height: 18px;
+}
+
+.Description>p{
+    line-height: 18px;
+}
+.label-sec>p {
+    line-height: 16px;   
+}
+.add-git>p{
+    line-height: 16px;   
+}
+.warn09{
+align-items: flex-start;
+}
+.warn09>p{
+    line-height: 18px;
+}
+footer{
+    width: 90vw ;
+    margin: auto;
+    padding-bottom: 4rem !important;
+}
+.copy-right{
+    flex-direction: column-reverse;
+}
+footer ul{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer ul li{
+    padding-top: 3px;
+}
+.copy-right-txt{
+    padding-top: 1rem;
 }
 }
 @media screen and (min-width:769px) and (max-width:1024px){
