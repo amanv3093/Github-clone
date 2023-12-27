@@ -91,6 +91,29 @@ let commandpalet1=document.querySelector("#command-plalette-003");
    
   }
 
+  //checkbx()
+let readme08=document.querySelector("#branch09");
+  function checkbx(){
+    console.log("chx")
+   if(readme08.style.display==="block"){
+    readme08.style.display="none";
+    console.log("none")
+   }else{
+    readme08.style.display="block";
+    console.log("block")
+   }
+  }
+  // owner
+  let owner87=document.querySelector(".owner090-hidd");
+  function owner09(){
+    if(owner87.style.display==="block"){
+      owner87.style.display="none";
+      console.log("none")
+     }else{
+      owner87.style.display="block";
+      console.log("block")
+     }
+  }
 let filterdisplay=document.querySelector("#filter-hidden-1");
   function filteropen(){
     if(filterdisplay.style.display === "block"){
@@ -107,11 +130,15 @@ let filterdisplay=document.querySelector("#filter-hidden-1");
       filterdisplay.style.display="block"
   }
   }
-  closefile.addEventListener("click",()=>{
+  closefile.addEventListener("click",(e)=>{
     addfilehidden.style.display = "none";
     search00122.style.display = "none";
-    commandpalet1.style.display="none"
+    commandpalet1.style.display="none";
+    
    
+    if(!(e.target.classList.contains("create-file0032"))){
+     owner87.style.display="none";
+    }
     document.body.style.backgroundColor="transparent"
     
   })
@@ -122,7 +149,7 @@ let filterdisplay=document.querySelector("#filter-hidden-1");
     if(!(e.target.classList.contains("create-file0032"))){
       console.log("not")
 addfilehidden.style.display="none";
-
+owner87.style.display="none";
 
     }
   })
