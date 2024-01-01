@@ -30,8 +30,7 @@
             <img src="GitHub-Mark-ea2971cee799-removebg-preview.png" alt="" /></a>
         </div>
         <div class="dashboard">
-          <span>New repository</span>
-          <span class="dash-b">New...</span>
+          
         </div>
         <div class="menu-list" id="openmenu">
           <div class="menu-all">
@@ -1169,124 +1168,97 @@
   <section id="section-1">
     <div class="section-box">
       <div class="section-box-head">
-        <h1>Create a new repository</h1>
-        <p>A repository contains all project files, including the revision history. Already have a project repository
-          elsewhere?</p>
-        <span class="import-anchor">
-          <a href="">Import a repository</a>
-        </span>
+        <h1>Import your project to GitHub</h1>
+        <p>Import all the files, including revision history, from another version control system.
+        </p>
+     
       </div>
-      <div class="required-section">
-        <h2>Required fields are marked with an asterisk (*).</h2>
-        <div class="owner090-head">
-          <div class="owner090 create-file0032">
-            <h1>Owner *</h1>
-            <div class="owner-input create-file0032" onclick="owner09()">
-              <img class="create-file0032" src="115875004.png" alt="">
-              <p class="create-file0032">user3093</p>
-              <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-triangle-down create-file0032" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg>
+      
 
-            </div>
-            <div class="owner090-hidd create-file0032">
-              <input class="create-file0032" type="text" placeholder="Filter...">
-              <ul class="create-file0032">
-                <li class="create-file0032"><a href="" class="create-file0032">
-                  <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-check create-file0032" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>
-                  <img src="115875004.png" alt="">
-                  user3093
-
-                </a></li>
-              </ul>
-
-            </div>
-
-          </div>
-          <span class="owner-slash">/</span>
-
-          <div class="repo-name">
-            <h1>Repository name *</h1>
-            <div class="repo-input">
-              <input type="text" name="" id="repo-input0">
-            </div>
-          </div>
-         
-
-        </div>
-        <div class="Description">
-        <p>Great repository names are short and memorable. Need inspiration? How about 
-         <a href="">crispy-octo-doodle</a> ?</p>
+     
+      <div class="Description">
+        <div class="support-text">Support for importing Mercurial, Subversion and Team Foundation Version Control (TFVC) repositories will end on April 12, 2024. For more details, see the <a href="" class="ancho08p">changelog.</a></div>
+        <p>Required fields are marked with an asterisk (*).
+        </p>
          <div class="Description-input">
-          <p>Description <span>(optional)</span></p>
+          <p>Your old repository's clone URL *
+          </p>
           <input type="text" name="" id="des-input">
-
+  
          </div>
         </div>
-
-      </div>
-      <div class="public-radio">
-        <div class="public-option">
-          <input type="radio" name="pubpvt" id="radio0">
-          <div class="public-icon">
-          <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-repo oction-repo090" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg></div>
-          <div class="label-sec">
-          <label for="radio0">Public</label>
-          <p>Anyone on the internet can see this repository. You choose who can commit.</p>
-        </div>
-       
-        </div>
      
-        <div class="public-option">
-          <input type="radio" name="pubpvt" id="radio1">
-          <div class="public-icon">
-            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-lock oction-repo090" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M4 4a4 4 0 0 1 8 0v2h.25c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25v-5.5C2 6.784 2.784 6 3.75 6H4Zm8.25 3.5h-8.5a.25.25 0 0 0-.25.25v5.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25ZM10.5 6V4a2.5 2.5 0 1 0-5 0v2Z"></path></svg></div>
-          <div class="label-sec">
-          <label for="radio1">Private</label>
-          <p>Anyone on the internet can see this repository. You choose who can commit.</p>
-        </div>
-       
-        </div>
+    <div class="required-section">
+      <h2>Required fields are marked with an asterisk (*).</h2>
+      <div class="owner090-head">
+        <div class="owner090 create-file0032">
+          <h1>Owner *</h1>
+          <div class="owner-input create-file0032" onclick="owner09()">
+            <img class="create-file0032" src="115875004.png" alt="">
+            <p class="create-file0032">user3093</p>
+            <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-triangle-down create-file0032" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg>
 
-      </div>
+          </div>
+          <div class="owner090-hidd create-file0032">
+            <input class="create-file0032" type="text" placeholder="Filter...">
+            <ul class="create-file0032">
+              <li class="create-file0032"><a href="" class="create-file0032">
+                <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-check create-file0032" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>
+                <img src="115875004.png" alt="">
+                user3093
 
-      <div class="initialize-repo">
-        <h1>Initialize this repository with:</h1>
-        <div class="initialize-repo-sec1 ">
-          <input type="checkbox" id="checbx-1"  onclick="checkbx()">
-          <div class="initialize-check-box">
-            <label onclick="checkbx()" for="checbx-1" >Add a README file</label>
-            <p>This is where you can write a long description for your project.<a href="">Learn more about READMEs.</a></p>
+              </a></li>
+            </ul>
+
           </div>
 
         </div>
-        <div class="add-git">
-          <h2>Add .gitignore</h2>
-          <button class="gitignore-border">
-          <p>.gitignore template:<span>None</span></p>
-         <div class="gitignore-icon"><svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-triangle-down" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></div>
-        </button>
-        <p>Choose which files not to track from a list of templates.<a href=""> Learn more about ignoring files.</a></p>
+        <span class="owner-slash">/</span>
+
+        <div class="repo-name">
+          <h1>Repository name *</h1>
+          <div class="repo-input">
+            <input type="text" name="" id="repo-input0">
+          </div>
         </div>
-        <div class="add-git">
-          <h2>Choose a license</h2>
-          <button class="gitignore-border">
-          <p>License:<span>None</span></p>
-         <div class="gitignore-icon"><svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-triangle-down" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></div>
-        </button>
-        <p>A license tells others what they can and can't do with your code.<a href=""> Learn more about licenses.</a></p>
-        <h4 id="branch09" class="create-file0032">This will set <span><svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-git-branch " viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.493 2.493 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25Zm-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"></path></svg>main</span>  as the default branch. Change the default name in your <a href="">settings.</a></h4>
-      </div>
-        
-        
+       
 
       </div>
-      <div class="warn09">
-        <span><svg aria-hidden="true" focusable="false" role="img" class="Octicon-sc-9kayk9-0 frGLnK" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg></span>
-<p>You are creating a private repository in your personal account.</p>
-      </div>
-      <div class="btn990">
-      <button class="repo-btn0909">Create repository</button>
+     
+
     </div>
+    <div class="public-radio">
+      <div class="public-option">
+        <input type="radio" name="pubpvt" id="radio0">
+        <div class="public-icon">
+        <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-repo oction-repo090" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg></div>
+        <div class="label-sec">
+        <label for="radio0">Public</label>
+        <p>Anyone on the internet can see this repository. You choose who can commit.</p>
+      </div>
+     
+      </div>
+   
+      <div class="public-option">
+        <input type="radio" name="pubpvt" id="radio1">
+        <div class="public-icon">
+          <svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-lock oction-repo090" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M4 4a4 4 0 0 1 8 0v2h.25c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25v-5.5C2 6.784 2.784 6 3.75 6H4Zm8.25 3.5h-8.5a.25.25 0 0 0-.25.25v5.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25ZM10.5 6V4a2.5 2.5 0 1 0-5 0v2Z"></path></svg></div>
+        <div class="label-sec">
+        <label for="radio1">Private</label>
+        <p>Anyone on the internet can see this repository. You choose who can commit.</p>
+      </div>
+     
+      </div>
 
+    </div>
+    <div class="warn09">
+      <span><svg aria-hidden="true" focusable="false" role="img" class="Octicon-sc-9kayk9-0 frGLnK" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg></span>
+<p>You are creating a private repository in your personal account.</p>
+    </div>
+    <div class="btn990">
+      <button class="repo-btn0908">Cancel</button>
+      <button class="repo-btn0909">Begin import</button>
+    </div>
 
     </div>
   </section>

@@ -1791,6 +1791,19 @@ border: 2px solid #0969da;
 .Description{
     margin-top: 15px;
 }
+.support-text{
+font-size: 14px;
+color: var(--color-fg-default);
+background-color: rgb(255, 248, 197);
+    border:1px solid rgba(212, 167, 44, 0.4);
+    padding: 16px;
+    border-radius: 6px;
+    line-height: 21px;
+    margin-bottom: 1rem;
+}
+.ancho08p{
+    color: #0969da;
+}
 .Description>p{
 font-size: 14px;
 color: var(--color-fg-default);
@@ -1967,11 +1980,27 @@ border-bottom: 1px solid var(--color-border-default);
 .btn990{
     display: flex;
     justify-content: flex-end;
+    gap: 10px;
+}
+
+.repo-btn0908{
+    /* background-color: rgb(31, 136, 61); */
+    color: #0969da;
+    padding: 8px 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 40px;
+    
+}
+.repo-btn0908:hover{
+    cursor: pointer;
+    background-color: var(--color-btn-hover-bg);
 }
 .repo-btn0909{
     background-color: rgb(31, 136, 61);
     color: #ffffff;
-    padding: 8px 20px;
+    padding: 8px 12px;
     margin-top: 20px;
     border: none;
     border-radius: 6px;
@@ -2240,7 +2269,7 @@ footer ul li{
         display: block !important;
     }
     .owner-input{
-        width: 52%;
+        width: 36%;
     }
     .owner-slash{
     display: none;
