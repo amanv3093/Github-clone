@@ -2567,9 +2567,20 @@ gap: 1px;
 }
 
 @media screen and (max-width:320px){
-    .toolkit-hov{
+    .toolkit-hov:hover .tookit{
         display: none;
     }
+    .search-mobile-hidden{
+        display: block !important;
+        margin-right: 3px;
+            }
+            .notification{
+                display: none;
+            }
+            .header-srch-border-hidden{
+                left: 18%;
+                top: 80%;
+            }
     .set-status-hidden{
         width: 91vw !important;
         left: 12px !important;
@@ -2582,15 +2593,11 @@ gap: 3px !important;
         gap: 0px !important;
     }
    
-    .profile {
-margin-left: 6px;
-    }
+  
     .search-bar {
         display: none !important;
     }
-    .search-mobile-hidden{
-display: block !important;
-    }
+    
     .searchbar-line{
         display: none;
     }
@@ -2600,9 +2607,7 @@ display: block !important;
     .pull-request{
         display: none;
     }
-    .create-file{
-        display: none;
-    }
+    
     .section-box-2-left {
         width: 100% !important;
     }
@@ -2756,14 +2761,26 @@ line-height: 18px !important;
 
     }
 @media screen and (min-width:321px) and (max-width:425px){
-    .toolkit-hov{
+    .toolkit-hov:hover .tookit{
         display: none;
     }
+    .search-mobile-hidden{
+        display: block !important;
+        margin-right: 3px;
+            }
+            .notification{
+                display: none;
+            }
+            .header-srch-border-hidden{
+                left: 37%;
+                top: 80%;
+            }
     .set-status-hidden{
         width: 91vw !important;
     left: 20px !important;
     top: 13px;
      }
+
     .header-search{
     gap: 3px !important;
         }
@@ -2772,14 +2789,12 @@ line-height: 18px !important;
         }
        
         .profile {
-    margin-left: 6px;
+ 
         }
         .search-bar {
             display: none !important;
         }
-        .search-mobile-hidden{
-    display: block !important;
-        }
+        
         .searchbar-line{
             display: none;
         }
@@ -2790,8 +2805,10 @@ line-height: 18px !important;
             display: none;
         }
         .create-file{
-            display: none;
+            /* display: none; */
         }
+        
+
         .dash-b{
             display: block !important;
         }
@@ -2833,6 +2850,9 @@ line-height: 18px !important;
     .search-0012-owner{
         padding-bottom: 1rem;
     }
+
+
+
     
     #section-1{
         display: block !important;
