@@ -556,7 +556,7 @@ hr {
     }
 }
 
-@media screen and (min-width:375px) and (max-width: 426px) {
+@media screen and (min-width:321px) and (max-width: 426px) {
 
     body {
         height: auto;
